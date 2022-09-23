@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+publish_mode: editorial_workflow
+locale: "pt"
+media_folder: public/posts
+public_folder: posts
+collections:
+  - name: "exemplo"
+    label: "Exemplo"      
+    folder: "public/posts/exemplo"
+    identifier_field: "nome"
+    slug: "{{slug}}"
+    extension: "json"    
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Nome", name: "nome", widget: "string" }
