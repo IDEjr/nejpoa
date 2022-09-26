@@ -1,3 +1,5 @@
+import Box from './../components/box';
+
 import styles from '../styles/Home.module.css'
 import Script from "next/script";
 
@@ -18,8 +20,9 @@ export default function Home(props) {
   return (
     <>
       <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"/>
-      <h1>{nomes[0].nome}</h1>
-      <h1>{nomes[1].nome}</h1>      
+      <Box>
+        {nomes.map( ({nome}, index) => <h1 key={index}>{nome}</h1>)} 
+      </Box>         
     </>
   )
 }
