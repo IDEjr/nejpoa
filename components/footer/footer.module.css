@@ -1,0 +1,52 @@
+.box{
+
+    width: 100vw;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+    padding: 2%;
+
+    background-color: #777777;
+}
+
+.logo{
+
+    width: 40vw;
+    height: 20vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    
+
+}
+
+.info{
+
+    width: 20vw;
+    height: 10vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    
+
+}
+
+.text{
+    
+    color: white;
+    font-weight: bold;
+    margin-left: 2%;
+}
