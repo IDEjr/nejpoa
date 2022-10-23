@@ -1,0 +1,25 @@
+.container
+{
+    /*background-color: purple;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    overflow: hidden;
+}
+
+.retangle_image
+{
+    position: absolute;
+
+    /*margin-left: 3%;*/
+    margin-left: 12%;
+
+    transition: transform 1s;
+
+    z-index: 1;
+}
+
+
+
