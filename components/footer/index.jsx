@@ -8,7 +8,7 @@ export default function footer({instagram, email})
 
         <div className={styles.box}>
                 <div className={styles.logo}>
-                    <Image src={'/footer/logo_nej.svg'} width={'300vw'} height={'100%'}/>
+                    <Image src={'/footer/logo_nej.svg'} layout="fill"/>
                     <span className={styles.text_logo}>Conectando propósitos</span>
             </div> 
             <div className={styles.info}>
