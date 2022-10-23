@@ -17,6 +17,7 @@ export function getStaticProps() {
 export default function Home(props) {
 
   let { nomes } = props;
+  
 
   return (
     <>
@@ -24,7 +25,7 @@ export default function Home(props) {
       <Box>
         {nomes.map( ({nome}, index) => <h1 key={index}>{nome}</h1>)} 
       </Box>         
-      <Footer/>
+      <Footer instagram = "@nejpoa" email = "contato@nejpoa.com.br"></Footer>
     </>
   )
 }
