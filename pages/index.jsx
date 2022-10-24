@@ -24,8 +24,8 @@ export default function Home(props) {
     <>      
       <Box>
         {nomes.map( ({nome}, index) => <h1 key={index}>{nome}</h1>)} 
-      </Box>
-      <Carousel_Eventos list={eventos}/>         
+        <Carousel_Eventos list={eventos}/>               
+      </Box>   
     </>
   )
 }

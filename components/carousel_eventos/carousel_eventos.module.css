@@ -1,23 +1,33 @@
 .container
 {
-    /*background-color: purple;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    /*position: relative;*/    
+}
 
-    overflow: hidden;
+.carousel_show
+{
+    background-color: blue;
+    position: relative;
+    width: 40vw;
+    min-height: 30vh;
+
+    /*overflow: hidden;*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .retangle_image
 {
     position: absolute;
+    width: 30vw;
+    height: 30vw;
 
-    /*margin-left: 3%;*/
-    margin-left: 12%;
 
     transition: transform 1s;
-
     z-index: 1;
 }
 

@@ -13,7 +13,7 @@ export default function Box(props)
             display: "flex",
             flexDirection: "column",
             justifyContent: "flex-start",
-            alignItems: "center",
+            alignItems: "center"
         }
 
     }else
