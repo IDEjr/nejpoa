@@ -1,13 +1,11 @@
 <h1 align="center"> Projeto NEJPOA </h1>
 
 <div align="center">
+  <br/><br/><br/>
   <a href="https://www.idejr.com.br/">
-    <img alt="IDE" src="https://user-images.githubusercontent.com/20328442/179406210-8c48c8f0-1d5c-4e4d-b4c6-31bcc220bfe7.png" width="150 align="center"" />    
+    <img alt="IDE" src="https://user-images.githubusercontent.com/20328442/198098095-2ebe0e19-61ab-4918-8e82-76f4a35bdd66.png" width="800 align="center"" />    
   </a>
-  <a href="https://biocodejr.com.br/">
-    <img alt="BioCode" src="https://user-images.githubusercontent.com/20328442/186575571-20d3c3c6-daff-4d75-9d51-da85af6fe906.png" width="250" align="center" />
-  </a>
-  
+  <br/><br/><br/>
 </div>
 
 ## [Guia rápido de comandos do git](https://rogerdudler.github.io/git-guide/index.pt_BR.html)
