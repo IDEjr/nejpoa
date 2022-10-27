@@ -1,10 +1,9 @@
-import style from './carousel.module.css'
 import Wait from '../wait'
 import Arrow from '../arrow'
 
 import Link from 'next/link'
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function walk_back(num, x, len)
 {
@@ -52,11 +51,26 @@ export default function Carousel(props)
             if(i < cur) transl = -translate_rate
             if(i > cur) transl = +translate_rate            
             list_hookers_transl.push(useState(transl))
-            list_hookers_zIndex.push(useState(0))
+            if((i == cur) || (i == (cur+1)%props.list.length) || (i == walk_back(cur, 1, props.list.length))) list_hookers_zIndex.push(useState(2))
+            else list_hookers_zIndex.push(useState(0))
             list.push(
-                <Link href={props.list[i].link}>                    
-                    <a className={style.retangle_image} style={{width:`${image_width}vw`, height:`${image_heigth}vw`, transform: `translate(${list_hookers_transl[i][0]}vw)`, zIndex:`${list_hookers_zIndex[i][0]}`}}>
-                        <Image src={props.list[i].image_source} layout='fill' />
+                <Link key={i} href={props.list[i].link}>                    
+                    <a className="container">
+                        <Image src={props.list[i].image_source} layout='fill'/>
+                        <style jsx>{`
+                            .container
+                            {
+                                width:${image_width}vw;
+                                height:${image_heigth}vw;
+
+                                position: absolute;
+
+                                transition: transform 1s;
+                                
+                                transform: translate(${list_hookers_transl[i][0]}vw);
+                                z-index:${list_hookers_zIndex[i][0]};
+                            }                            
+                        `}</style>
                     </a>
                 </Link>)            
         }
@@ -64,43 +78,59 @@ export default function Carousel(props)
 
     function handleButton_Right()
     {
-        let to_do = true
-        let order = 2
-        //for(let order_cur = (cur + 1)%list.length; order_cur != end_l; order_cur = (order_cur + 1)%list.length, order -= 1) list_hookers_zIndex[order_cur][1](order - 1)
-        //for(let order_cur = walk_back(cur, 1, list.length); order_cur != start_l; order_cur = walk_back(cur, 1, list.length), order -= 1) list_hookers_zIndex[order_cur][1](order - 1)
+        //Ordena os objetos que irão aparecer
         list_hookers_zIndex[start_l][1](-1)
+        list_hookers_zIndex[cur][1](2)
+        list_hookers_zIndex[(cur+1)%props.list.length][1](2)
+        list_hookers_zIndex[(cur+2)%props.list.length][1](1)
+        list_hookers_zIndex[walk_back(cur, 1, props.list.length)][1](1)
+
+        //Movimenta
         list_hookers_transl[start_l][1](list_hookers_transl[start_l][0]+(2*translate_rate))
-
-        list_hookers_zIndex[cur][1](1)
         list_hookers_transl[cur][1](list_hookers_transl[cur][0]-translate_rate)
+        list_hookers_transl[(cur+1)%props.list.length][1](list_hookers_transl[(cur+1)%props.list.length][0]-translate_rate)
 
-        list_hookers_zIndex[(cur+1)%list.length][1](1)
-        list_hookers_transl[(cur+1)%list.length][1](list_hookers_transl[(cur+1)%list.length][0]-translate_rate)
-
-        setCur((cur + 1)%list.length)
-        setStart((start_l + 1)%list.length)
-        setEnd((end_l + 1)%list.length)              
+        //Atualiza dados
+        setCur((cur + 1)%props.list.length)
+        setStart((start_l + 1)%props.list.length)
+        setEnd((end_l + 1)%props.list.length)              
     }
 
     function handleButton_Left()
-    {        
+    {
+        //Ordena os objetos que irão aparecer        
         list_hookers_zIndex[end_l][1](-1)
+        list_hookers_zIndex[cur][1](2)
+        list_hookers_zIndex[walk_back(cur, 1, props.list.length)][1](2)
+        list_hookers_zIndex[walk_back(cur, 2, props.list.length)][1](1)
+        list_hookers_zIndex[(cur+1)%props.list.length][1](1)
+        
+        //Movimenta
         list_hookers_transl[end_l][1](list_hookers_transl[end_l][0]-(2*translate_rate))
-
-        list_hookers_zIndex[cur][1](1)
         list_hookers_transl[cur][1](list_hookers_transl[cur][0]+translate_rate)
+        list_hookers_transl[walk_back(cur, 1, props.list.length)][1](list_hookers_transl[walk_back(cur, 1, props.list.length)][0]+translate_rate)
 
-        list_hookers_zIndex[walk_back(cur, 1, list.length)][1](1)
-        list_hookers_transl[walk_back(cur, 1, list.length)][1](list_hookers_transl[walk_back(cur, 1, list.length)][0]+translate_rate)
-
-        setCur(walk_back(cur, 1, list.length))
-        setEnd(walk_back(end_l, 1, list.length))
-        setStart(walk_back(start_l, 1, list.length))
+        //Atualiza dados
+        setCur(walk_back(cur, 1, props.list.length))
+        setEnd(walk_back(end_l, 1, props.list.length))
+        setStart(walk_back(start_l, 1, props.list.length))
     }
     
 
     return (
-            <div className={style.container} style={{/*backgroundColor: background_color,*/ width:`${width}vw`, height:`${image_heigth}vw`}}>
+            <div className="container">
+            <style jsx>{`
+                .container
+                {
+                    width: ${width}vw;
+                    height: ${image_heigth}vw;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                }                
+            `}</style>
                 <Arrow left={'0px'} fun={handleButton_Left} rot={45} color={color_theme}/>
                 { list.length == 0 ? <Wait color={color_theme}/> : <>{list}</>}                
                 <Arrow right={'0px'} fun={handleButton_Right} rot={225} color={color_theme}/>

@@ -1,24 +1,39 @@
-import style from './arrow_carousel.module.css'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Arrow(props)
 {
-    const [scale, setScale] = useState("");
+    const [scale, setScale] = useState("")
 
-    //console.log(props.left)
-    //console.log(props.right)
+    //console.log(props)
 
     return(
-        <div className={style.seta_default} 
-             style={{
-                    transform:`rotate(${props.rot ? props.rot : '45'}deg) ${scale}`,
-                    borderColor: props.color ? props.color:'black',
-                    left: props.left ? props.left : '',
-                    right: props.right ? props.right : ''
-                }} 
-             onMouseOver={()=>setScale("scale(1.2)")} 
-             onMouseLeave={()=>setScale("")} 
-             onClick={() => {props.fun ? (props.fun)() : none }}/>
+        <div className="seta_default" 
+             onMouseOver={()=>setScale("scale(1.2)")}
+             onMouseLeave={()=>setScale("")}
+             onClick={() => {props.fun ? (props.fun)() : ()=>{} }}>
+
+            <style jsx>{`
+                    .seta_default 
+                    {
+                        position: absolute;
+                        background-color: rgba(0, 0, 0, 0);
+                    
+                        width: 20px;
+                        height: 20px;
+                        border: solid;
+                        border-width: 0 0 5px 5px;   
+                    
+                    
+                        transition: transform 0.1s;
+                        
+                        z-index: 3;
+                        transform: rotate(${props.rot ? props.rot : '45'}deg) ${scale};
+                        border-color: ${props.color ? props.color:'black'};
+                        left: ${props.left ? props.left : ''};
+                        right: ${props.right ? props.right : ''};
+                    }
+            `}</style>
+        </div>
     )
     
 
