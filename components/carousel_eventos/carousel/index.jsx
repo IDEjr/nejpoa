@@ -17,7 +17,7 @@ function walk_back(num, x, len)
 
 export default function Carousel(props)
 {
-    let width, color_theme, background_color, qde_show, image_width, image_heigth
+    let width, color_theme, qde_show, image_width, image_heigth
     let list = []
     let list_hookers_transl = []
     let list_hookers_zIndex = []
@@ -28,9 +28,6 @@ export default function Carousel(props)
     else width = 80    
     if(props.color) color_theme = props.color
     else color_theme = '#A82A44'
-    /*
-    if(props.background_color) background_color = props.background_color
-    else background_color = 'purple'*/
     if(props.image_width) image_width = props.image_width
     else image_width = 20
     if(props.image_heigth) image_heigth = props.image_heigth
@@ -121,7 +118,7 @@ export default function Carousel(props)
             <div className="container">
             <style jsx>{`
                 .container
-                {
+                {                    
                     width: ${width}vw;
                     height: ${image_heigth}vw;
 
@@ -131,9 +128,10 @@ export default function Carousel(props)
                     position: relative;
                 }                
             `}</style>
-                <Arrow left={'0px'} fun={handleButton_Left} rot={45} color={color_theme}/>
-                { list.length == 0 ? <Wait color={color_theme}/> : <>{list}</>}                
-                <Arrow right={'0px'} fun={handleButton_Right} rot={225} color={color_theme}/>
+                { (props.list && props.list.length>0) ? <Arrow left={'0px'} fun={handleButton_Left} rot={45} color={color_theme}/> : null }
+                { list.length == 0 ? <Wait color={color_theme}/> : <>{list}</>}
+                { (props.list && props.list.length>0) ? <Arrow right={'0px'} fun={handleButton_Right} rot={225} color={color_theme}/> : null }                
+                
             </div>
     )
 }
