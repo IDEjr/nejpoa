@@ -6,9 +6,9 @@ export default function Carousel_Eventos(props)
 {
     return(
         <>
-            <Title/>
-            <Carousel list={props.list}/>
-            <Button/>
+            <Title title={props.title} color={props.color}/>
+            <Carousel list={props.list} color={props.color} image_heigth={props.image_heigth}/>
+            <Button color={props.color}/>
         </>
         
     )

@@ -3,7 +3,7 @@ import Arrow from '../arrow'
 
 import Link from 'next/link'
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 function walk_back(num, x, len)
 {
