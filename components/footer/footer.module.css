@@ -4,23 +4,40 @@
     width: 100vw;
     height: 40vh;
     display: flex;
-    flex-direction: row;
-    padding: 3% 5%;
+    flex-direction: column;
+    padding: 3% 0;
     justify-content: center;
     
     background-color: #777777;
 }
 
-.logo{
+.box_content{
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  margin: 0 5% 5% 0;
+  /*background-color: aqua;*/
+     
+}
 
-    width: 30vw;
-    height: 20vh;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-start;
-    align-items: flex-start;
-    position: relative;    
-    
+.box_CNPJ{
+  background-color: black;
+  width: 28vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1%;
+}
+
+.logo{
+  display: flex;
+  flex-direction: column;
+  margin-right: 15%;
+ /* background-color: black;*/
 }
 
 .info{
@@ -31,7 +48,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-
+    margin-right: -8%;
     
 
 }
@@ -43,15 +60,20 @@
 }
 
 .text_logo{
-    
-    color: white;
-    font-size: 1.35rem;
+    color: #ffffff;
+    font-size: 1.25rem;
     margin-top: -5%;
     justify-content: flex-start;
     align-items: flex-start;
+  }
+
+.text_CNPJ{
+  color: #ffffff;
+  font-size: 0.80rem;
+  text-align: center;
+
+
 }
-
-
 @media (max-width: 600px) {
   .box {
     flex-direction: column;
