@@ -20,7 +20,7 @@
   justify-content: center;
   position: relative;
   margin: 0 5% 5% 0;
- /* background-color: aqua;*/
+/*background-color: aqua;*/
      
 }
 
@@ -46,14 +46,14 @@
 
 .info{
 
-    width: 50vw;
+    width: 59vw;
     height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     margin-right: -50%;
-    background-color: red;
+   /*background-color: red;*/
     
 
 }
@@ -84,15 +84,24 @@
 
 }
 @media (max-width: 600px) {
-  .box {
-    flex-direction: column;
-  }
-  .logo {
-    justify-content: center;
-    align-items: center;
-  }
-
   .text_logo{
     display: none;
   }
+
+  .box_content{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo{
+    position: relative;
+    justify-content: center;
+    margin-left: 50%;
+  }
+
+  .info{
+    width: 100vw;
+    margin-right: 0%;
+  }
 }
+
