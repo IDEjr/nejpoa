@@ -11,6 +11,7 @@
     background-color: #777777;
 }
 
+
 .box_content{
   width: 100vw;
   height: 20vh;
@@ -19,43 +20,50 @@
   justify-content: center;
   position: relative;
   margin: 0 5% 5% 0;
-  /*background-color: aqua;*/
+ /* background-color: aqua;*/
      
 }
 
 .box_CNPJ{
-  background-color: black;
-  width: 28vw;
+  
+  width: 30vw;
   height: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 1%;
+  margin-left: 32vw;
 }
 
 .logo{
   display: flex;
   flex-direction: column;
   margin-right: 15%;
- /* background-color: black;*/
+  transform: translateX(-20vw);
+  /*background-color: black;*/
+  position: absolute;
 }
 
 .info{
 
-    width: 20vw;
+    width: 50vw;
     height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-right: -8%;
+    margin-right: -50%;
+    background-color: red;
     
 
 }
 
 .text_icons{
+    font-size: 1.10rem;
     color: white;
     margin-left: 2%;
+    margin-right: 5%;
+    padding-right: 2%;
     
 }
 
@@ -63,13 +71,14 @@
     color: #ffffff;
     font-size: 1.25rem;
     margin-top: -5%;
+    margin-left: 1.5%;
     justify-content: flex-start;
     align-items: flex-start;
   }
 
 .text_CNPJ{
   color: #ffffff;
-  font-size: 0.80rem;
+  font-size: 1rem;
   text-align: center;
 
 
