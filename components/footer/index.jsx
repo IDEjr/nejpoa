@@ -9,10 +9,13 @@ export default function footer({instagram, email})
         <div className={styles.box}>
                 <div className={styles.box_content}>
                    <div className={styles.logo}>
-                    <Image src={'/footer/logo_nej.svg'} width={"275vw"} height={"75vh"}/>
+                    <div className={styles.image_logo}>
+                        <Image src={'/footer/logo_nej.svg'} layout= {'fill'}/>
+                    </div>
                     <span className={styles.text_logo}>Conectando propósitos</span>
                    </div>
                 <div className={styles.info}>
+
                     <Image src={'/footer/Instagram.svg'} width={'25%'} height={'25%'}/>
                     <span className={styles.text_icons}>{instagram}</span>
                     <Image src={'/footer/Icon.svg'} width={'25%'} height={'25%'}/>
