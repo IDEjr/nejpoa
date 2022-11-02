@@ -20,7 +20,7 @@
   justify-content: space-evenly;
   align-items: center;
   position: relative;
-  background-color: aqua;
+  /* background-color: aqua; */
      
 }
 
@@ -39,7 +39,7 @@
 .image_logo{
   width: 40vw;
   height: 20vh;
-  
+  margin-left: -5%;
   position: relative;
  /* background-color: brown;*/
 }
@@ -49,7 +49,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  background-color: black;
+  /* background-color: black; */
 }
 
 .info{
@@ -57,7 +57,7 @@
     width: 50%;
     height: 50%;
     margin-right: -20%;
-    background-color: red;
+    /*background-color: red;*/
     
 
 }
@@ -74,7 +74,7 @@
 .text_logo{
     color: #ffffff;
     font-size: 3rem;
-    margin-top: -5%;
+    margin-top: -4%;
     
     
   /*  background-color: red;*/
