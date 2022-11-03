@@ -29,10 +29,10 @@
   height: 10vh;
   display: flex;
   flex-direction: column;
- /* justify-content: center;*/
   padding: 0 1%;
-  margin-left: 32vw;
-  margin-bottom: -2%;
+  /* margin-left: 32vw;
+  margin-bottom: -2%; */
+  margin: 0% 0% -2% 32vw;
  
 }
 
@@ -66,4 +66,13 @@
     flex-direction: column;
     align-items: center;
   } 
+}
+
+@media (max-width: 450px){
+  .box_CNPJ{
+    width: 100%;
+    margin-left: 0%;
+    padding: 0% 2% 0% 2%;
+    /* background-color: chartreuse; */
+  }
 }

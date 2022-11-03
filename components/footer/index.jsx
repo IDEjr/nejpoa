@@ -17,10 +17,10 @@ export default function footer({instagram, email})
                     </div>
                     <span className={textStyles.text_logo}>Conectando propósitos</span>
                    </div>
-                <div className={styles.info}>  
-                    <Image src={'/footer/Instagram.svg'} width={'30%'} height={'30%'}/>
+                <div className={styles.info}>
+                    <Image src={'/footer/Instagram.svg'} width={'35%'} height={'35%'}/>
                     <span className={textStyles.text_icons}>{instagram}</span>
-                    <Image src={'/footer/Icon.svg'} width={'30%'} height={'30%'}/>
+                    <Image src={'/footer/Icon.svg'} width={'35%'} height={'35%'}/>
                     <span className={textStyles.text_icons}>{email}</span>
                 </div>  
             </div> 
