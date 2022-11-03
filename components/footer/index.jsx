@@ -16,9 +16,9 @@ export default function footer({instagram, email})
                    </div>
                 <div className={styles.info}>
 
-                    <Image src={'/footer/Instagram.svg'} width={'25%'} height={'25%'}/>
+                    <Image src={'/footer/Instagram.svg'} width={'35%'} height={'35%'}/>
                     <span className={styles.text_icons}>{instagram}</span>
-                    <Image src={'/footer/Icon.svg'} width={'25%'} height={'25%'}/>
+                    <Image src={'/footer/Icon.svg'} width={'35%'} height={'35%'}/>
                     <span className={styles.text_icons}>{email}</span>
                 </div>  
             </div> 
