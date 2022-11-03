@@ -1,0 +1,33 @@
+.text_icons{
+    font-size: 1.3rem;
+    color: white;
+    margin-left: 2%;
+    margin-right: 5%;
+    padding-right: 2%;
+    
+}
+
+.text_logo{
+    width: 40vw;
+    margin-top: -3%;
+    margin-left: 0%;
+    color: #ffffff;
+    font-size: 2rem;
+    /* background-color: red; */
+  
+    
+  }
+
+.text_CNPJ{
+  color: #ffffff;
+  font-size: 1rem;
+  text-align: center;
+
+
+}
+
+@media (max-width: 880px) {
+  .text_logo{
+    display: none; 
+    }
+}

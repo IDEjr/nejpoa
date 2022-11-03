@@ -1,0 +1,16 @@
+.image_logo{
+    width: 32vw;
+    height: 20vh;
+    position: relative;
+    /* background-color: brown; */
+  }
+
+  @media (max-width: 880px){
+    
+    .image_logo{
+      width: 50vw;
+      height: 20vh;
+      margin-left: -7vw;
+      position: relative;
+    }
+  }
