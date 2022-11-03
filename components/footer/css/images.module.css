@@ -4,6 +4,18 @@
     position: relative;
     /* background-color: brown; */
   }
+.icon_insta{
+  width: 45px;
+  height: 45px;
+  position: relative;
+}
+.icon_email{
+  
+  width: 70px;
+  height: 30px;
+  position: relative;
+  /* background-color: black; */
+}
 
   @media (max-width: 880px){
     

@@ -28,4 +28,9 @@
   .text_logo{
     display: none; 
     }
+  }
+@media (max-width: 450px){
+  .text_icons{
+    display: none;
+  }
 }
