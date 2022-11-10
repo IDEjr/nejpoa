@@ -21,8 +21,9 @@ export default function Arrow(props)
                         width: 20px;
                         height: 20px;
                         border: solid;
-                        border-width: 0 0 5px 5px;   
-                    
+                        border-width: 0 0 5px 5px;
+                        
+                        margin: 2%;                    
                     
                         transition: transform 0.1s;
                         

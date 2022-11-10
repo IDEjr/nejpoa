@@ -32,7 +32,7 @@ export default function Carousel(props)
     else image_width = 20
     if(props.image_heigth) image_heigth = props.image_heigth
     else image_heigth = 20 
-    
+
     const [cur, setCur] = useState(parseInt(props.list ? parseInt(props.list.length / 2) : 0))
     const [end_l, setEnd] = useState(props.list ? props.list.length - 1 : 0);
     const [start_l, setStart] = useState(0);
@@ -76,7 +76,7 @@ export default function Carousel(props)
     function handleButton_Right()
     {
         //Ordena os objetos que irão aparecer
-        list_hookers_zIndex[start_l][1](-1)
+        list_hookers_zIndex[start_l][1](0)
         list_hookers_zIndex[cur][1](2)
         list_hookers_zIndex[(cur+1)%props.list.length][1](2)
         list_hookers_zIndex[(cur+2)%props.list.length][1](1)
@@ -96,7 +96,7 @@ export default function Carousel(props)
     function handleButton_Left()
     {
         //Ordena os objetos que irão aparecer        
-        list_hookers_zIndex[end_l][1](-1)
+        list_hookers_zIndex[end_l][1](0)
         list_hookers_zIndex[cur][1](2)
         list_hookers_zIndex[walk_back(cur, 1, props.list.length)][1](2)
         list_hookers_zIndex[walk_back(cur, 2, props.list.length)][1](1)
@@ -124,14 +124,15 @@ export default function Carousel(props)
 
                     display: flex;
                     justify-content: center;
-                    align-items: center;
+                    align-items: ${ props.align ? props.align : 'center'};
                     position: relative;
+
+                    overflow: hidden;
                 }                
             `}</style>
-                { (props.list && props.list.length>0) ? <Arrow left={'0px'} fun={handleButton_Left} rot={45} color={color_theme}/> : null }
-                { list.length == 0 ? <Wait color={color_theme}/> : <>{list}</>}
-                { (props.list && props.list.length>0) ? <Arrow right={'0px'} fun={handleButton_Right} rot={225} color={color_theme}/> : null }                
-                
+                {props.left ? <Arrow left={'0'} fun={handleButton_Left} rot={45} color={color_theme}/> : <></>}
+                { <>{list}</>}
+                {props.right ? <Arrow right={'0'} fun={handleButton_Right} rot={225} color={color_theme}/> : <></>}
             </div>
     )
 }
