@@ -10,7 +10,7 @@ export default function Carousel_Eventos(props)
             .container
             {
                 width: ${props.width ? props.width : 100}vw;
-                background-color: ${props.backgroundColor? props.backgroundColor : '#DCDCDC'};
+                background-color: ${props.backgroundColor? props.backgroundColor : '#EEEEEE'};
 
                 display: flex;
                 flex-direction: column;
