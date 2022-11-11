@@ -97,7 +97,7 @@ export default function Contacts() {
             required
             onChange={handleChange}
           />
-         <textarea className={style.textarea}
+         <input className={style.textarea}
         
           name="mensagem"
           rows="5"

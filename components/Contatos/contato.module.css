@@ -129,10 +129,10 @@
 
 }
 .input{
-    width: 39%;
+    width: 39.5%;
     height: 20%;
     border-radius: 15px;
-    padding: 4px;
+    padding: 7px;
     border: 1px solid black;
     background-color: #e282975b;
     margin-right: 1%;
@@ -140,10 +140,10 @@
 
 }
 .assunto{
-    width: 79%;
+    width: 80%;
     height: 20%;
     border-radius: 15px;
-    padding: 4px;
+    padding: 7px;
     border: 1px solid black;
     background-color: #e282975b;
 }
@@ -151,7 +151,8 @@
 .textarea{
     border-radius: 15px;
     padding: 4px;
-    width: 79%;
+    width: 80%;
+    height: 55%;
     border: 1px solid black;
     background-color: #e282975b;
     margin-top: 7px;
@@ -159,7 +160,7 @@
     
 }
 .btn_submit{
-    width: 81%;   
+    width: 80%;   
     padding: 1.2%;
     background-color: #b44059c7;
     color: #FFFFFF;
@@ -171,6 +172,7 @@
     text-align: center;
     cursor: pointer;
     border-radius: 10px;
+    
 
 }
   
