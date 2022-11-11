@@ -13,13 +13,13 @@
 
 .box_ej:hover {
     cursor: pointer;
-    background-color: #b00909;
+    background-color: #820101;
     transform: scale(1.02);
 }
 
 .box_ej:hover h2{
   
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 
