@@ -1,7 +1,7 @@
-import Box from './../components/box';
 
 import styles from '../styles/Home.module.css'
 import Script from "next/script";
+import EJs from '../components/Nossas_EJs';
 
 import { handleJSONfiles } from '../functions/jsonHandler';
 
@@ -20,9 +20,7 @@ export default function Home(props) {
   return (
     <>
       <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"/>
-      <Box>
-        {nomes.map( ({nome}, index) => <h1 key={index}>{nome}</h1>)} 
-      </Box>         
+      <EJs/>
     </>
   )
 }

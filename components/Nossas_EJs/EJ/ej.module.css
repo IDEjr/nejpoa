@@ -1,0 +1,33 @@
+.box_ej{
+    width: 15vw;
+    height: 13vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;  
+    border-radius: 10px;
+    margin-bottom: 6%;
+    background-color: #A83C3C;
+ 
+}
+
+.box_ej:hover {
+    cursor: pointer;
+    background-color: #b00909;
+    transform: scale(1.02);
+}
+
+.box_ej:hover h2{
+  
+    font-weight: bold;
+}
+
+
+
+
+.box_ej h2{
+    color: #FFFFFF;
+    font-size: 1.5vw;
+    font-weight: normal;
+}
+
