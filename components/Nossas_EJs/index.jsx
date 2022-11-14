@@ -1,5 +1,6 @@
 import style from './ejs.module.css'
 import EJ from './EJ'
+import Link from 'next/link'
 export default function EJs() {
     const EJS = ['Negócios', 'Tecnologia', 'Agrária', 'Saúde', 'Engenharia', 'Humanas']
     return(
@@ -13,7 +14,9 @@ export default function EJs() {
                     )
                 })}
             </div>
-            <button>Ver Todas</button>
+                <Link href={'#'}>
+                     <button>Ver Todas</button>
+                </Link>
             </div>
         </div>
     )
