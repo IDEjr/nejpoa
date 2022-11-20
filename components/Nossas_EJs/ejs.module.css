@@ -18,12 +18,25 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     /* align-items: center; */
     gap: 6vw;
     margin: 0% 20%;
     /* background-color: black; */
 }
+
+.condicional {
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 6vw;
+    margin: 0% 20%;
+    
+}
+
 .box_button{
     display: flex;
     flex-direction: column;
@@ -53,5 +66,12 @@
         gap: 35px;
         margin: 0% 15%;
         justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 300px){
+    .container span{
+        text-align: center;
+        font-size: 30px;
     }
 }
