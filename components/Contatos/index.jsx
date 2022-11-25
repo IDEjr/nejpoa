@@ -19,6 +19,8 @@ const customStyles = {
   }};
 
 export default function Contacts() {
+  
+  
 
     // const form = useRef();
 
@@ -48,25 +50,26 @@ export default function Contacts() {
       setTextarea(values => ({...values, [name]: value}))
     }
   
-    const handleSubmit = (event) => {
+    // const handleSubmit = (event) => {
       
-      // event.preventDefault();
+    //   // event.preventDefault();
 
-    alert("Email enviado");
-    }
+    // alert("Email enviado");
+    // }
   
     return ( 
+      
     <div className={style.container}>
         <div className={style.contact_text}>
           <h1 className={style.h1}>Contato</h1>
-        
+          {/* <image src="arrow-right.svg" alt="" className="imgArrow"/> */}
           <h3 className={style.h3}>Se interessou em ser parceiro do NEJ POA? Quer entender melhor como uma Empresa Júnior pode resolver a dor da sua empresa? Ou quer criar uma EJ? Entre em contato que te responderemos em até 2 dias úteis.</h3>
       </div>
       
     
    
       <div className={style.contact_forms}>
-      <form id="form1" className={style.form} action="https://formsubmit.co/caroline@biocodejr.com.br"
+      <form id="form1" className={style.form} action="https://formsubmit.co/caroline@biocodejr.com.br" target = "_blank"
           method="POST">
       
         <input className={style.input}
@@ -112,6 +115,7 @@ export default function Contacts() {
           <input className={style.btn_submit}
            type="submit"
            placeholder="Enviar"
+           
            
            
             />
