@@ -1,7 +1,5 @@
 import Script from "next/script";
-
-import Box from "./../components/box";
-
+import Header from "../components/Header";
 import { handleJSONfiles } from "../functions/jsonHandler";
 
 export function getStaticProps() {
@@ -18,11 +16,7 @@ export default function Home(props) {
   return (
     <>
       <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
-      <Box>
-        {nomes.map(({ nome }, index) => (
-          <h1 key={index}>{nome}</h1>
-        ))}
-      </Box>
+      <Header/>
     </>
   );
 }
