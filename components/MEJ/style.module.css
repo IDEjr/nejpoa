@@ -18,14 +18,23 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    
 }
 
 .img_nej{
     position: relative;
-    width: fit-content;
+    width: 50vw;
+    height: 40vw;
     display: flex;
     margin-right: 6%;
+   
     /* background-color: black; */
+}
+
+.container_infos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .infos{
@@ -34,14 +43,12 @@
     gap: 10vw;
 }
 
-.container_infos{
-    display: flex;
-    flex-direction: column;
-}
+
 
 @media (max-width: 1500px){
     .content_container{
         flex-direction: column;
+         
     }
 }
 

@@ -10,7 +10,7 @@ export default function MEJ(){
             
             <div className={style.content_container}>
                 <div className={style.img_nej}>
-                    <Image src='/MEJ/imagemnejpoa.png' width={'800px'} height={'600px'} alt='imagem ilustrativa de uma empresa'/>
+                    <Image src='/MEJ/imagemnejpoa.png' layout={'fill'} alt='imagem ilustrativa de uma empresa'/>
                 </div>
             
             <div className={style.container_infos}>
