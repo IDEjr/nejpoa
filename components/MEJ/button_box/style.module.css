@@ -32,6 +32,11 @@
     transform: scale(1.01);
     cursor: pointer;
     color: #4C9ABB;
-    font-weight: bold;
-    
+}
+
+@media (max-width: 780px){
+    .button_box{
+        margin-top: -10% ;
+        margin-bottom: 10%;
+    }
 }

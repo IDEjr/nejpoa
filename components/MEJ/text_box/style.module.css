@@ -18,3 +18,17 @@
     /* font-weight: bold; */
     font-size: 30px;
 }
+
+
+@media (max-width: 420px){
+    .text_box{
+        width: 100%;
+    }
+    .text_box h1{
+        font-size: 60px;
+    }
+
+    .text_box span{
+        font-size: 30px;
+    }
+}
