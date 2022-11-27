@@ -1,0 +1,34 @@
+.text_box {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    /* background-color: black; */
+}
+
+.text_box h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #A83C3C;
+    margin-bottom: 2%;
+}
+
+.text_box span{
+    color: black;
+    /* font-weight: bold; */
+    font-size: 30px;
+}
+
+
+@media (max-width: 420px){
+    .text_box{
+        width: 100%;
+    }
+    .text_box h1{
+        font-size: 60px;
+    }
+
+    .text_box span{
+        font-size: 30px;
+    }
+}

@@ -14,7 +14,7 @@ export default function Header(){
                 {links.map( i => {
                     return(
                         <>
-                            <Link href={`#${i}`} >
+                            <Link href={`#${i}`} key={i}>
                                 <a>{i}</a>
                             </Link>
                         {i == links[links.length - 1] ? false : <span className={style.barra}>|</span>}
