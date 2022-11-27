@@ -18,6 +18,7 @@ export default function Home(props) {
     <>
       <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
       <Header/>
+      <MEJ/>
     </>
   );
 }

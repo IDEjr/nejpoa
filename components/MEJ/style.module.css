@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    background-color: #FFFFFF;
+    padding: 2% 2%;
+}
+
+.container h1{
+    color: #A83C3C;
+    font-size: clamp(1.5rem, 3rem, 5rem);
+    font-weight: bold;
+    margin-bottom: 5%;
+}
