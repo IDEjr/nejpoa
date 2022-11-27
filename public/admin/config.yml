@@ -17,3 +17,4 @@ collections:
       preview: false
     fields:
       - { label: "Nome", name: "nome", widget: "string" }
+      - { label: "Link", name: "link", widget: "string" }
