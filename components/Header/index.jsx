@@ -2,7 +2,9 @@ import style from './styles.module.css'
 import Image from 'next/image'
 import Link from 'next/link';
 export default function Header(){
+    
     const links = ['sobre nós', 'parceiros', 'nossas ejs', 'eventos', 'mej', 'contato'];
+
     return(
         <div className={style.header}>
             <div className={style.logo}>
@@ -11,7 +13,12 @@ export default function Header(){
             <nav>
                 {links.map( i => {
                     return(
-                        <a>{i}</a>
+                        <>
+                            <Link href={`#${i}`} >
+                                <a>{i}</a>
+                            </Link>
+                        {i == links[links.length - 1] ? false : <span className={style.barra}>|</span>}
+                        </>  
                     )
                 })}
             </nav>
