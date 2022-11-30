@@ -76,7 +76,7 @@ export default function Carousel(props)
     function handleButton_Right()
     {
         //Ordena os objetos que irão aparecer
-        list_hookers_zIndex[start_l][1](0)
+        list_hookers_zIndex[start_l][1](-1)
         list_hookers_zIndex[cur][1](2)
         list_hookers_zIndex[(cur+1)%props.list.length][1](2)
         list_hookers_zIndex[(cur+2)%props.list.length][1](1)
@@ -96,7 +96,7 @@ export default function Carousel(props)
     function handleButton_Left()
     {
         //Ordena os objetos que irão aparecer        
-        list_hookers_zIndex[end_l][1](0)
+        list_hookers_zIndex[end_l][1](-1)
         list_hookers_zIndex[cur][1](2)
         list_hookers_zIndex[walk_back(cur, 1, props.list.length)][1](2)
         list_hookers_zIndex[walk_back(cur, 2, props.list.length)][1](1)
