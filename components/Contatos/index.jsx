@@ -69,7 +69,7 @@ export default function Contacts() {
     
    
       <div className={style.contact_forms}>
-      <form id="form1" className={style.form} action="https://formsubmit.co/caroline@biocodejr.com.br" target = "_blank"
+      <form id="form1" className={style.form} action="https://formsubmit.co/contato@nejpoa.com.br" target = "_blank"
           method="POST">
       
         <input className={style.input}
