@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 function walk_back(num, x, len)
 {
-    if(len < 2) return num
+    if(len < 2) return 
     x = x%len
     if((num - x) < 0)
     {
@@ -121,12 +121,10 @@ export default function Carousel(props)
                 {                    
                     width: ${width}vw;
                     height: ${image_heigth}vw;
-
                     display: flex;
                     justify-content: center;
                     align-items: ${ props.align ? props.align : 'center'};
                     position: relative;
-
                     overflow: hidden;
                 }                
             `}</style>

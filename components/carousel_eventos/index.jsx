@@ -5,13 +5,15 @@ import Button from './button'
 
 export default function Carousel_Eventos(props)
 {
+
+    let list = [];
+    if(props.list) list = props.list
     return(
         <div className="container"><style jsx>{`
             .container
             {
                 width: ${props.width ? props.width : 100}vw;
                 background-color: ${props.backgroundColor? props.backgroundColor : '#EEEEEE'};
-
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -24,9 +26,9 @@ export default function Carousel_Eventos(props)
         `}</style>
 
             <Title title={props.title} color={props.color}/>
-            {props.list.length <= 3 ? 
-                <No_Carousel list={props.list} color={props.color} image_width={props.image_width} image_heigth={props.image_heigth} /> : 
-                <Carousel list={props.list} color={props.color} width={props.width} image_width={props.image_width} image_heigth={props.image_heigth} right={props.right} left={props.left} align={props.align}/>
+            {list.length <= 3 ? 
+                <No_Carousel list={list} color={props.color} image_width={props.image_width} image_heigth={props.image_heigth} /> : 
+                <Carousel list={list} color={props.color} width={props.width} image_width={props.image_width} image_heigth={props.image_heigth} right={props.right} left={props.left} align={props.align}/>
             }
             {props.button ? <Button color={props.color} link={props.link}/> : <></>}
         </div>
