@@ -6,6 +6,7 @@ import Contatos from '../components/Contatos'
 import Footer from '../components/footer'
 import Carousel_Eventos from '../components/carousel_eventos'
 import { handleJSONfiles } from "../functions/jsonHandler";
+import JSXStyle from "styled-jsx/style";
 
 
 
@@ -24,7 +25,19 @@ export default function Home(props) {
   
 
   return (
-    <>
+    <div className="container">
+      <style jsx>{`
+            .container
+            {
+                width: 100%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+            }
+        `}</style>
       <Header/>
       <EJs/>
       <MEJ/>
@@ -33,6 +46,6 @@ export default function Home(props) {
       <Carousel_Eventos list={parceiros} backgroundColor='white' color='#4C9ABB' image_heigth={8} title={'Nossos parceiros'} link={'/parceiros'} right left button/>   
       <Contatos/>
       <Footer instagram = "@nejpoa" email = "contato@nejpoa.com.br"/>
-    </>
+    </div>
   );
 }
