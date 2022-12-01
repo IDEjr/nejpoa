@@ -11,10 +11,10 @@ export default function Header(){
                 <Image src='/header/logo-header.png' layout={'fill'} />
             </div>
             <nav>
-                {links.map( i => {
+                {links.map( (i,index) => {
                     return(
                         <>
-                            <Link href={`#${i}`} key={i}>
+                            <Link href={`#${i}`} >
                                 <a>{i}</a>
                             </Link>
                         {i == links[links.length - 1] ? false : <span className={style.barra}>|</span>}
