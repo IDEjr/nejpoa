@@ -1,9 +1,12 @@
+
 import Header from "../components/Header";
 import MEJ from "../components/MEJ";
 import EJs from '../components/Nossas_EJs';
+import Contatos from '../components/Contatos'
 import Footer from '../components/footer'
 import Carousel_Eventos from '../components/carousel_eventos'
 import { handleJSONfiles } from "../functions/jsonHandler";
+
 
 
 export function getStaticProps() {
@@ -22,13 +25,13 @@ export default function Home(props) {
 
   return (
     <>
-      
       <Header/>
       <EJs/>
       <MEJ/>
       <Carousel_Eventos list={blogs} backgroundColor='#DDDDDD' title={'Blog'} image_heigth={27} right align={'flex-end'}/>        
       <Carousel_Eventos list={eventos} right left button/>
       <Carousel_Eventos list={parceiros} backgroundColor='white' color='#4C9ABB' image_heigth={8} title={'Nossos parceiros'} link={'/parceiros'} right left button/>   
+      <Contatos/>
       <Footer instagram = "@nejpoa" email = "contato@nejpoa.com.br"/>
     </>
   );
