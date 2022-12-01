@@ -8,9 +8,9 @@ export default function EJs() {
             <span>Conheça nossas EJs!</span>
             <div className={style.box_button}>
                 <div className={EJS.length % 2 ? style.condicional : style.container__EJs }>
-                {EJS.map((empresa) => {
+                {EJS.map((empresa, index) => {
                     return (
-                        <EJ titulo = {empresa}/>
+                        <EJ key={index} titulo = {empresa}/>
                     )
                 })}
             </div>
