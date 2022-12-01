@@ -1,4 +1,3 @@
-import Script from "next/script";
 import Header from "../components/Header";
 import MEJ from "../components/MEJ";
 import EJs from '../components/Nossas_EJs';
@@ -23,7 +22,7 @@ export default function Home(props) {
 
   return (
     <>
-      <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
+      
       <Header/>
       <EJs/>
       <MEJ/>
