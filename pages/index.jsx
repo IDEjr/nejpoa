@@ -1,7 +1,8 @@
 import Script from "next/script";
 import Header from "../components/Header";
+import Banner from "../components/Banner";
+import Sobre from "../components/Sobre";
 import MEJ from "../components/MEJ";
-import Footer from '../components/footer'
 import { handleJSONfiles } from "../functions/jsonHandler";
 
 export function getStaticProps() {
@@ -20,8 +21,10 @@ export default function Home(props) {
     <>
       <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
       <Header/>
+      <Banner/>
+      <Sobre/>
       <MEJ/>
-      <Footer instagram = "@nejpoa" email = "contato@nejpoa.com.br"/>
+    
 
     </>
   );
