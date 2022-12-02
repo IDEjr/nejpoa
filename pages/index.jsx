@@ -2,7 +2,6 @@ import Script from "next/script";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Sobre from "../components/Sobre";
-import MEJ from "../components/MEJ";
 import { handleJSONfiles } from "../functions/jsonHandler";
 
 export function getStaticProps() {
@@ -23,7 +22,7 @@ export default function Home(props) {
       <Header/>
       <Banner/>
       <Sobre/>
-      <MEJ/>
+     
     
 
     </>

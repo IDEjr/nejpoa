@@ -7,3 +7,10 @@
     justify-content: space-around;
     /* background-color: black; */
 }
+
+@media (max-width: 990px){
+    .container{
+        display: flex;
+        flex-direction: column;    
+    }
+}

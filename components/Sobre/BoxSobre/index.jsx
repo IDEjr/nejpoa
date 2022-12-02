@@ -9,10 +9,10 @@ export default function BoxSobre(props){
     props.cor == 'vermelho' ? textStyle= styles.vermelho : textStyle = styles.azul;
 
     return(
-        <div className={styles.box}>
+
             <div className={styles.container}>
                 <AnimatedNumber
-                    value={counter + parseFloat(props.titulo)}
+                    value={counter + parseFloat(props.titulo)}s
                     className={textStyle}
                     formatValue={n=> n.toFixed(0)}
                     style={
@@ -25,6 +25,6 @@ export default function BoxSobre(props){
                 />
                 <span className={textStyle}>{props.conteudo}</span>
             </div>
-        </div>
+        
     )
 }
