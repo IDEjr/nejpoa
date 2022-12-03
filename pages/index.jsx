@@ -1,5 +1,6 @@
 
 import Header from "../components/Header";
+import Sobre from "../components/Sobre"
 import MEJ from "../components/MEJ";
 import EJs from '../components/Nossas_EJs';
 import Contatos from '../components/Contatos'
@@ -39,6 +40,7 @@ export default function Home(props) {
             }
         `}</style>
       <Header/>
+      <Sobre/>
       <EJs/>
       <MEJ/>
       <Carousel_Eventos list={blogs} backgroundColor='#DDDDDD' title={'Blog'} image_heigth={27} right align={'flex-end'}/>        
