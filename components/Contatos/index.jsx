@@ -63,7 +63,7 @@ export default function Contacts() {
         <div className={style.contact_text}>
           <h1 className={style.h1}>Contato</h1>
           {/* <image src="arrow-right.svg" alt="" className="imgArrow"/> */}
-          <h3 className={style.h3}>Se interessou em ser parceiro do NEJ POA? Quer entender melhor como uma Empresa Júnior pode resolver a dor da sua empresa? Ou quer criar uma EJ? Entre em contato que te responderemos em até 2 dias úteis.</h3>
+          <h3 className={style.h3}><span>→</span>Se interessou em ser parceiro do NEJ POA? Quer entender melhor como uma Empresa Júnior pode resolver a dor da sua empresa? Ou quer criar uma EJ? Entre em contato que te responderemos em até 2 dias úteis.</h3>
       </div>
       
     
@@ -76,7 +76,7 @@ export default function Contacts() {
           type="text" 
           name="firstname" 
           value={inputs.firstname || ""}
-          placeholder="Nome" 
+          placeholder="  Nome" 
           required
           onChange={handleChange}
         />
@@ -86,7 +86,7 @@ export default function Contacts() {
             type="email" 
             name="email" 
             value={inputs.email || ""}
-            placeholder="Email"  
+            placeholder="✉ Email"  
             required
             onChange={handleChange}
           />
@@ -96,18 +96,25 @@ export default function Contacts() {
             name="assunto" 
             id="assunto"
             value={inputs.assunto || ""}
+            style={
+              {
+                fontWeight: "bold"
+              }
+            }
             placeholder="Assunto"  
             required
             onChange={handleChange}
           />
-         <input className={style.textarea}
+         <textarea className={style.textareas}
         
           name="mensagem"
           rows="5"
           cols="20"
           maxLength="500"
+      
           value={inputs.mensagem || ""}
           placeholder="Mensagem"
+    
           required
           onChange={handleChange}
            />
