@@ -1,5 +1,6 @@
 
 import Header from "../components/Header";
+import Banner from "../components/Banner";
 import Sobre from "../components/Sobre"
 import MEJ from "../components/MEJ";
 import EJs from '../components/Nossas_EJs';
@@ -40,6 +41,7 @@ export default function Home(props) {
             }
         `}</style>
       <Header/>
+      <Banner/>
       <Sobre/>
       <EJs/>
       <MEJ/>
