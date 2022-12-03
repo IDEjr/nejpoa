@@ -1,6 +1,4 @@
-
-
- .container {
+.container {
   min-height: 60vh;
   background-color: #DDDDDD;
   display: flex;
@@ -10,16 +8,12 @@
   justify-content: space-evenly;
   align-items: stretch;
   font-family:sans-serif;
- 
- 
 }
 .contact_text{
-  
     width: 40%;
     height: auto;
     padding: 0% 0% 0% 4%;
     margin-top: -2em;
-
 
 }
 .h1{
@@ -27,8 +21,6 @@
     color: #A83C3C;
 }
 .h3{
-    /* width:  80%; */
-    
     padding-top: 0.2em;
     font-size: 1.1em;
     color: #000000;
@@ -39,49 +31,34 @@
     text-align: justify;
 }
 
-/* .imgArrow{
-  
-    color: black;
-    width: 16px;
-    height: 16px;     
-  
-} */
 .contact_forms{
   
-    width: 50%;
-    /* margin-top: 0.8em;   */
-   
+    width: 50%;   
 }
 .form{
-    /* margin-top: 25%; */
     line-height:3;
     width: 100%;
     height: 70%;
-    
-    
-
 }
 .input{
     width: 39.5%;
-    /* height: 20%; */
     height: auto;
     border-radius: 10px;
     padding: 10px;
     border: 1px solid transparent;
     background-color: #e282975b;
     margin-right: 1%;
-   
+    box-shadow: 2px 2px #88888841;
 
 }
 .assunto{
     width: 80%;
-    /* height: 20%; */
     height: auto;
-
     border-radius: 10px;
     padding: 10px;
     border: 1px solid transparent;
     background-color: #e282975b;
+    box-shadow: 2px 2px #88888841;
 }
 
 .textarea{
@@ -93,12 +70,12 @@
     background-color: #e282975b;
     margin-top: 7px;
     font-size: 12pt;
+    box-shadow: 2px 2px #88888841;
     
 }
 .btn_submit{
     width: 80%;   
     padding: 1.2%;
-    /* background-color: #b44059c7; */
     background-color: rgba(180, 64, 89, 0.78);
     color: #FFFFFF;
     font-family: Inter;
@@ -111,30 +88,22 @@
     border-radius: 10px;
     margin-top: 20px;
     border: 1px solid transparent;
-
+    box-shadow: 1px 1px #88888841;
 }
   
 
 @media (max-width: 850px) 
 {
   .contact_text{
-  /* margin-left: -7em; */
   width: 50%;
   height: auto;
-  
-
 }
 .h3{
   inline-size: 90%;
-    overflow-wrap: break-word;
-    
+  overflow-wrap: break-word;
 }
  .contact_forms{
-/*   
-  width: 100%; */
-  margin-top: 2em;
-  /* margin-left: 4em; */
- 
+  margin-top: 2em; 
 }
  .form{
   
@@ -180,7 +149,7 @@
   margin-bottom: 1em;
 
 }
-  .h3{
+.h3{
   inline-size: 100%;
   overflow-wrap: break-word;
     
@@ -192,16 +161,16 @@
   margin-left: 3em;
  
 }
- .form{
+.form{
   
   line-height:3;
   width: 100%;
   height: 35%;
-  
- }
- .btn_submit{
+  }
+
+.btn_submit{
     width: 81%;
-    
+
 }
 
 }
