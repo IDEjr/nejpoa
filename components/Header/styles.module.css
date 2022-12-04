@@ -29,7 +29,7 @@
 
 .header nav a{
     color: #4C9ABB;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     margin-left: 2%;
     text-transform: uppercase;
 
@@ -51,9 +51,7 @@
 
 
 @media (max-width: 1100px){
-    .header nav a{
-        font-size: 1.1rem;
-    }
+   
     
     .logo{
         width: 200px;
