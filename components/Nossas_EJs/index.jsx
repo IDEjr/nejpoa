@@ -15,7 +15,7 @@ export default function EJs() {
                     )
                 })}
             </div>
-                <Link href={'/eventos'}>
+                <Link href={'/nossas-ejs'}>
                      <button>Ver Todas</button>
                 </Link>
             </div>
