@@ -1,0 +1,16 @@
+.container{
+    width: 100%;
+    height: fit-content;
+    padding: 5% 2% 5% 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: black; */
+}
+
+@media (max-width: 990px){
+    .container{
+        display: flex;
+        flex-direction: column;    
+    }
+}
