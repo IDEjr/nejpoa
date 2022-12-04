@@ -14,7 +14,7 @@ export default function EJs() {
                     )
                 })}
             </div>
-                <Link href={'#'}>
+                <Link href={'/nossas-ejs'}>
                      <button>Ver Todas</button>
                 </Link>
             </div>
