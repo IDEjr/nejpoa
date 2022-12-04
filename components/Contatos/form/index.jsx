@@ -1,7 +1,10 @@
 import style from "./form.module.css";
 import { useState } from 'react';
 
+
 export default function Form() {
+
+    
     const [inputs, setInputs] = useState({});
     const [textarea, setTextarea] = useState('');
     
@@ -15,22 +18,23 @@ export default function Form() {
     return(
         <form id="form1" className={style.form} action="https://formsubmit.co/contato@nejpoa.com.br" target = "_blank"
           method="POST">
-      
-        <input className={style.input}
+
+        <input className={style.inputNome}
+        
           type="text" 
           name="firstname" 
           value={inputs.firstname || ""}
-          placeholder="  Nome" 
+          placeholder= "    Nome" 
           required
           onChange={handleChange}
         />
-        
+      
        
-          <input className={style.input}
+          <input className={style.inputEmail}
             type="email" 
             name="email" 
             value={inputs.email || ""}
-            placeholder="✉ Email"  
+            placeholder="   Email"  
             required
             onChange={handleChange}
           />
