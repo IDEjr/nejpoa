@@ -3,19 +3,40 @@
     width: 100%;
     
 }
-.input{
+.inputNome{
     width: 39.5%;
     padding: 0% 2% 0% 2%;
     height: 45px;
     font-weight: bold;
     border-radius: 15px;
     border: 1px solid transparent;
-    background-color: #e282975b;
+    /* background-color: #e282975b; */
     font-size: 17px;
     margin: 0% 3% 3% 0%;
     box-shadow: 2px 2px 5px gray;
-
+    padding-left: 30px;
+    background: url("https://thenounproject.com/api/private/icons/854886/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABji84kKL5kBMO-WTrd2LkbozDec8QUfBeI-6QTt3YLFNMwY1yJLmVv7m4rO12esX1E_itoF1jgiGm14yf7lm5HivM-Vw%3D%3D") no-repeat left #e282975b ;
+    
+    background-size: 40px;
+   
 }
+.inputEmail{
+    width: 39.5%;
+    padding: 0% 2% 0% 2%;
+    height: 45px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    /* background-color: #e282975b; */
+    font-size: 17px;
+    margin: 0% 3% 3% 0%;
+    box-shadow: 2px 2px 5px gray;
+    padding-left: 30px;
+    background: url("https://thenounproject.com/api/private/icons/5341361/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABji8ux3qd3gjYwQqrt_lXVnVfLt_96Z_1QY66GF7td3NBJGcUvBWcuo-bO67FT1-5tH4dnJUSBruqmMqTHas4YloBa5A%3D%3D") no-repeat left #e282975b;
+    background-size: 40px;
+   
+}
+
 .assunto{
     width: 81.9%;
     height: 45px;
@@ -26,6 +47,7 @@
     background-color: #e282975b;
     font-size: 17px;
     box-shadow: 2px 2px 5px gray;
+    
   }
 
 .textareas{
@@ -60,6 +82,7 @@
     border: 1px solid transparent;
 
 }
+
 
 @media (max-width: 850px) 
 {
