@@ -1,11 +1,12 @@
 import style from './ejs.module.css'
 import EJ from './EJ'
 import Link from 'next/link'
+import Title from '../carousel_eventos/title'
 export default function EJs() {
     const EJS = ['Negócios', 'Tecnologia', 'Agrária', 'Saúde', 'Engenharia', 'Humanas']
     return(
         <div id='nossas ejs' className={style.container}>
-            <span>Conheça nossas EJs!</span>
+            <Title title='Conheça nossas EJs!'/>
             <div className={style.box_button}>
                 <div className={EJS.length % 2 ? style.condicional : style.container__EJs }>
                 {EJS.map((empresa, index) => {

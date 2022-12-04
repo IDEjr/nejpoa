@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./contato.module.css";
 import Form from "./form";
-
+import Title from "../carousel_eventos/title";
 
 export default function Contacts() {
   
