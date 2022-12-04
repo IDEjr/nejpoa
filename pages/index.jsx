@@ -45,9 +45,9 @@ export default function Home(props) {
       <Sobre/>
       <EJs/>
       <MEJ/>
-      <Carousel_Eventos list={blogs} backgroundColor='#DDDDDD' title={'Blog'} image_heigth={27} right align={'flex-end'}/>        
-      <Carousel_Eventos list={eventos} right left button/>
-      <Carousel_Eventos list={parceiros} backgroundColor='white' color='#4C9ABB' image_heigth={8} title={'Nossos parceiros'} link={'/parceiros'} right left button/>   
+      <Carousel_Eventos id='blog' list={blogs} backgroundColor='#DDDDDD' title={'Blog'} image_heigth={27} right align={'flex-end'}/>        
+      <Carousel_Eventos id='eventos' list={eventos} right left button/>
+      <Carousel_Eventos id='parceiros' list={parceiros} backgroundColor='white' color='#4C9ABB' image_heigth={8} title={'Nossos parceiros'} link={'/parceiros'} right left button/>   
       <Contatos/>
       <Footer instagram = "@nejpoa" email = "contato@nejpoa.com.br"/>
     </div>

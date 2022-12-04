@@ -9,7 +9,7 @@ export default function Carousel_Eventos(props)
     let list = [];
     if(props.list) list = props.list
     return(
-        <div className="container"><style jsx>{`
+        <div id={props.id} className="container"><style jsx>{`
             .container
             {
                 width: ${props.width ? props.width : 100}vw;
