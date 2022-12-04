@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function EJs() {
     const EJS = ['Negócios', 'Tecnologia', 'Agrária', 'Saúde', 'Engenharia', 'Humanas']
     return(
-        <div className={style.container}>
+        <div id='nossas ejs' className={style.container}>
             <span>Conheça nossas EJs!</span>
             <div className={style.box_button}>
                 <div className={EJS.length % 2 ? style.condicional : style.container__EJs }>

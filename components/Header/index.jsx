@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 export default function Header(){
     
-    const links = ['sobre nós', 'parceiros', 'nossas ejs', 'eventos', 'mej', 'contato'];
+    const links = ['sobre nós', 'parceiros', 'nossas ejs', 'eventos', 'mej', 'blog', 'contato'];
 
     return(
         <div className={style.header}>

@@ -5,7 +5,7 @@ import ButtonBox from './button_box'
 export default function MEJ(){
     return (
         <>
-        <div className={style.container}>
+        <div id='mej' className={style.container}>
             <h1>MEJ</h1>
             
             <div className={style.content_container}>
