@@ -47,7 +47,7 @@ export default function alou(){
     return(
         <div style={{backgroundColor: '#efefef', height:'100vh'}}>
             <Header />
-            <div className={styles.pageContainer} style={{maxWidth: tags.length*150+(tags.length*8)}}>
+            <div className={styles.pageContainer} style={{maxWidth: tags.length*200+(tags.length*12)}}>
                 <div className={styles.searchBarContainer}>
                     <input type="text" className={styles.searchBar} placeholder="Digite aqui o nome da empresa..." onChange={event => {setSearchTerm(event.target.value)}}></input>
                     <span className={styles.searchBarIcon}></span>
@@ -58,7 +58,7 @@ export default function alou(){
                         return(
                             <span key={key} className={styles.activeTag}>
                                 {tagNames[activeTag]}
-                                <buttton className={styles.removeTagButton} onClick={()=>toggleTag(activeTag)}>x</buttton>
+                                <buttton className={styles.removeTagButton} onClick={()=>toggleTag(activeTag)}>   x</buttton>
                             </span>
                         )
                     })
@@ -72,7 +72,7 @@ export default function alou(){
                                 onClick={()=>toggleTag(tag)} 
                                 type="button" 
                                 key={key} 
-                                style={{backgroundColor: activeTags.includes(tag) ? '#852E2E' : ''}} 
+                                style={{backgroundColor: activeTags.includes(tag) ? '#852E2E' : '', fontWeight: activeTags.includes(tag) ? 'bold' : ''}} 
                                 className={styles.tagButton}>
                                     {tagNames[tag]}
                                 </button>
