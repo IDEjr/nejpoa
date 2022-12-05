@@ -1,7 +1,8 @@
 import style from './styles.module.css'
 import Image from 'next/image'
 import Link from 'next/link';
-export default function Header(){
+import { getStaticProps } from '../../pages';
+export default function Header(props){
     
     const links = ['sobre nós', 'parceiros', 'nossas ejs', 'eventos', 'mej', 'blog', 'contato'];
 
@@ -11,7 +12,8 @@ export default function Header(){
                 <Image src='/header/logo-header.png' layout={'fill'} />
             </div>
             <nav>
-                {links.map( (i,index) => {
+                {props.home == '1' ? 
+                links.map( (i,index) => {
                     return(
                         <>
                             <Link href={`#${i}`} >
@@ -20,7 +22,7 @@ export default function Header(){
                         {i == links[links.length - 1] ? false : <span className={style.barra}>|</span>}
                         </>  
                     )
-                })}
+                }) : <Link href={'/'}><a style={{marginRight: '5%'}}>Voltar</a></Link>}
             </nav>
         </div>
     )
