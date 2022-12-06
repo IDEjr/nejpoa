@@ -48,7 +48,7 @@ export default function alou(){
     return(
         <div style={{backgroundColor: '#efefef', height:'100vh'}}>
             <Header home='0'/>
-            <div className={styles.pageContainer} style={{maxWidth: tags.length*150+(tags.length*8)}}>
+            <div className={styles.pageContainer} style={{maxWidth: tags.length*200+(tags.length*12)}}>
                 <div className={styles.searchBarContainer}>
                     <input type="text" className={styles.searchBar} placeholder="Digite aqui o nome da empresa..." onChange={event => {setSearchTerm(event.target.value)}}></input>
                     <span className={styles.searchBarIcon}></span>
