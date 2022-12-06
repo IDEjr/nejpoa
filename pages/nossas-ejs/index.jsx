@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Header from "../../components/Header"
+import Footer from "../../components/footer";
 import json from "../../public/posts/eventos/ejs.json"
 import styles from "./style.module.css"
 
@@ -46,8 +47,8 @@ export default function alou(){
     let index = 0;
     return(
         <div style={{backgroundColor: '#efefef', height:'100vh'}}>
-            <Header />
-            <div className={styles.pageContainer} style={{maxWidth: tags.length*200+(tags.length*12)}}>
+            <Header home='0'/>
+            <div className={styles.pageContainer} style={{maxWidth: tags.length*150+(tags.length*8)}}>
                 <div className={styles.searchBarContainer}>
                     <input type="text" className={styles.searchBar} placeholder="Digite aqui o nome da empresa..." onChange={event => {setSearchTerm(event.target.value)}}></input>
                     <span className={styles.searchBarIcon}></span>
@@ -99,6 +100,7 @@ export default function alou(){
                     }           
                 </div>
             </div>
+            <Footer instagram = "@nejpoa" email = "contato@nejpoa.com.br"/>
         </div>
     )
 }
