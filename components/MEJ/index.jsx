@@ -2,7 +2,7 @@ import style from './style.module.css'
 import Image from 'next/image'
 import TextBox from './text_box'
 import ButtonBox from './button_box'
-import Title from '../carousel_eventos/title'
+import Title from '../title'
 export default function MEJ(){
     return (
         <>

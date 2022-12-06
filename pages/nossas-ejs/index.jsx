@@ -5,7 +5,7 @@ import Footer from "../../components/footer";
 import json from "../../public/posts/eventos/ejs.json"
 import styles from "./style.module.css"
 
-export default function alou(){
+export default function NossasEjs(){
     const tags = Object.keys(json);
     const [searchTerm, setSearchTerm] = useState('');
 

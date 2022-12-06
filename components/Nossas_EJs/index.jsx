@@ -1,7 +1,7 @@
 import style from './ejs.module.css'
 import EJ from './EJ'
 import Link from 'next/link'
-import Title from '../carousel_eventos/title'
+import Title from '../title'
 export default function EJs() {
     const EJS = ['Negócios', 'Tecnologia', 'Agrária', 'Saúde', 'Engenharia', 'Humanas']
     return(
