@@ -59,7 +59,7 @@ export default function alou(){
                         return(
                             <span key={key} className={styles.activeTag}>
                                 {tagNames[activeTag]}
-                                <buttton className={styles.removeTagButton} onClick={()=>toggleTag(activeTag)}>x</buttton>
+                                <buttton className={styles.removeTagButton} onClick={()=>toggleTag(activeTag)}>   x</buttton>
                             </span>
                         )
                     })
@@ -73,7 +73,7 @@ export default function alou(){
                                 onClick={()=>toggleTag(tag)} 
                                 type="button" 
                                 key={key} 
-                                style={{backgroundColor: activeTags.includes(tag) ? '#852E2E' : ''}} 
+                                style={{backgroundColor: activeTags.includes(tag) ? '#852E2E' : '', fontWeight: activeTags.includes(tag) ? 'bold' : ''}} 
                                 className={styles.tagButton}>
                                     {tagNames[tag]}
                                 </button>
