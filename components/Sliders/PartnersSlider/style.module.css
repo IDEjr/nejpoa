@@ -1,0 +1,63 @@
+.sliderContainer{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.sliderItem{
+    display: block;
+    min-height: 150px;
+    min-width: 130px;
+    max-width: 250px;
+    background: blue;
+    transition: all 0.6s;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.sliderItem:hover{
+    box-shadow: 0px 0px 20px rgba(0,0,0,.6); 
+}
+
+.slider{
+    background-color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.owlNav{
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    top: calc(50% - 30px);
+}
+
+.owlNext, .owlPrev{
+    position: absolute;
+    height: 60px;
+    width: 30px;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/assets/slim-arrow.svg");
+    transition: 0.6s all;
+}
+
+.owlNext:hover, .owlPrev:hover{
+    transform: scale(1.1);
+}
+
+.owlNext{
+    right: calc(-80vw - 55px);
+}
+
+.owlPrev{
+    transform: rotate(-180deg); 
+    left: -55px;
+}

@@ -3,28 +3,6 @@ import dynamic from "next/dynamic";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import styles from "./style.module.css"
-let productsp = [{
-    id: 1,
-    name: "Product Number 1",
-    brand: "Brand Name",
-    url: "products-number-1",
-    price: 100,
-},
-{
-    id: 1,
-    name: "Product Number 1",
-    brand: "Brand Name",
-    url: "products-number-1",
-    price: 100,
-},
-{
-    id: 1,
-    name: "Product Number 1",
-    brand: "Brand Name",
-    url: "products-number-1",
-    price: 100,
-},
-];
 
 var $ = require("jquery");
 if (typeof window !== "undefined") {
@@ -40,7 +18,7 @@ ssr: false,
 // import OwlCarousel from 'react-owl-carousel';
 
 const Slider = () => {
-    const BrandsConfig = {
+    const EventsConfig = {
         loop: true,
         nav: true,
         dots: false,
@@ -51,7 +29,6 @@ const Slider = () => {
         responsiveClass: true,
         mouseDrag: true,
         touchDrag: true,
-        center: true,
         responsive:{
             0:{
                 items:1,    
@@ -65,23 +42,24 @@ const Slider = () => {
         },
         navContainerClass: `${styles.owlNav}`,
         navClass: [`${styles.owlPrev}`, `${styles.owlNext}`],
+        navText: ['',''],
+
     };
 
 return (
     <div className={styles.sliderContainer}>
-        <h1>marcas fodase</h1>
         <OwlCarousel
         className={styles.slider}
-        {...BrandsConfig}    
+        {...EventsConfig}    
         >
             <div className={styles.sliderItem}>
-                renner
+                decola
             </div>
             <div className={styles.sliderItem}>
-                batman
+                jooj
             </div>
             <div className={styles.sliderItem}>
-                com monique
+                alinha
             </div>
         </OwlCarousel>
     </div>
