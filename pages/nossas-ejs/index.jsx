@@ -2,12 +2,13 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Header from "../../components/Header"
 import Footer from "../../components/footer";
-import json from "../../public/posts/eventos/ejs.json"
+import json from "../../public/posts/ejs/ejs.json"
 import styles from "./style.module.css"
 
 export default function NossasEjs(){
     const tags = Object.keys(json);
     const [searchTerm, setSearchTerm] = useState('');
+    const ejsPath = "./posts/ejs";
 
     const tagNames = {
         negocios: "Negócios",
@@ -92,7 +93,7 @@ export default function NossasEjs(){
                         }).map((ej, key)=>{
                             return(
                                 <div key={key} className={styles.ej}>
-                                    <img src={ej.url} className={styles.ejLogo} alt="Logo ej"></img>
+                                    <img src={`${ejsPath + ej.url}`} className={styles.ejLogo} alt="Logo ej"></img>
                                     <br/>
                                 </div>
                             ) 
