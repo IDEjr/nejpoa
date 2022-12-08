@@ -5,7 +5,7 @@ export default function Descricao(props){
     return(
         <div className={style.container}>
             <div className={style.img}>
-                <Image src='/sobre/quadrado-estilizado.png' layout={'fill'}/>
+                <Image src='/sobre/retangulo.png' layout={'fill'}/>
             </div>
             <p>{props.content}</p>
         </div>

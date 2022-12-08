@@ -8,13 +8,13 @@ export default function Sobre(){
 
     return(
         <>
-            <Title title='Sobre nós'/>
-            <Descricao content={conteudo}/>        
+            <Title title='Sobre nós'/> 
             <div id='sobre nós' className={styles.container}>
                 <BoxSobre titulo= '32' conteudo='Empresas Juniores' cor='vermelho'/>       
                 <BoxSobre titulo='683' conteudo='Contratos Feitos' cor='azul'/> 
                 <BoxSobre titulo='1.3' conteudo='milhão de faturamento em 2022' cor='vermelho'/> 
             </div>
+            <Descricao content={conteudo}/>    
         </>
     )
 }
