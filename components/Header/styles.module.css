@@ -34,11 +34,16 @@
     color: #4C9ABB;
     display: flex;
     font-size: 1.5vw;
-    justify-content: space-between;
-  
     text-transform: uppercase;
 }
 
+.header a{
+    color: #4C9ABB;
+    display: flex;
+    font-size: 1.5vw;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
 
 
 .animatedHover{

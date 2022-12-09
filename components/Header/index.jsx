@@ -21,7 +21,7 @@ export default function Header(props){
                             </Link>
                         </li>  
                     )
-                }) : <Link href={'/'}><a style={{marginRight: '5%'}}>Voltar</a></Link>}
+                }) : <Link href={'/'}><a className={style.animatedHover} style={{marginRight: '-50%'}}>Voltar</a></Link>}
             </ul>
         </div>
     )
