@@ -39,7 +39,9 @@ ssr: false,
 // This is for React JS, Remove this for Next.js
 // import OwlCarousel from 'react-owl-carousel';
 
-const Slider = () => {
+import Image from "next/image";
+
+const Slider = (props) => {
     const PartnersConfig = {
         loop: true,
         nav: true,
@@ -68,23 +70,21 @@ const Slider = () => {
         navText: ['',''],
     };
 
-return (
-    <div className={styles.sliderContainer}>
-        <OwlCarousel
-        className={styles.slider}
-        {...PartnersConfig}    
-        >
-            <div className={styles.sliderItem}>
-                renner
-            </div>
-            <div className={styles.sliderItem}>
-                batman
-            </div>
-            <div className={styles.sliderItem}>
-                com monique
-            </div>
-        </OwlCarousel>
-    </div>
-    )
+    return (
+        <div className={styles.sliderContainer}>
+            <OwlCarousel
+            className={styles.slider}
+            {...PartnersConfig}    
+            >   
+                {props.list.map((item, key)=>{
+                    return( 
+                        <a href={item.link} key={key} className={styles.sliderItem}>
+                            <img layout={"fill"} alt={"Imagem do parceiro NEJPOA"} src={item.image_source}/>
+                        </a>
+                    )
+                })}
+            </OwlCarousel>
+        </div>
+        )
 };
 export default Slider;

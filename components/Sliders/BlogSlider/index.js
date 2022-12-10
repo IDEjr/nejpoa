@@ -18,7 +18,7 @@ ssr: false,
 // This is for React JS, Remove this for Next.js
 // import OwlCarousel from 'react-owl-carousel';
 
-const Slider = () => {
+const Slider = (props) => {
     const BlogConfig = {
         nav: true,
         dots: false,
@@ -48,22 +48,14 @@ return (
         <OwlCarousel
         className={styles.slider}
         {...BlogConfig}    
-        >
-            <div className={styles.sliderItem}>
-                <BlogTemplate/>
-            </div>
-
-            <div className={styles.sliderItem}>
-                <BlogTemplate/>
-            </div>
-
-            <div className={styles.sliderItem}>
-                <BlogTemplate/>
-            </div>
-
-            <div className={styles.sliderItem}>
-                <BlogTemplate/>
-            </div>
+        >   
+            {props.list.map((post, key)=>{
+                return(
+                    <div key={key} className={styles.sliderItem}>
+                        <BlogTemplate/>
+                    </div>
+                )
+            })}
         </OwlCarousel>
     </div>
     )

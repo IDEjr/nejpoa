@@ -8,8 +8,9 @@ import Contatos from '../components/Contatos'
 import Footer from '../components/footer'
 import { handleJSONfiles } from "../functions/jsonHandler";
 import JSXStyle from "styled-jsx/style";
-
-
+import Events from "../components/Events"
+import Partners from "../components/Partners"
+import Blog from "../components/Blog"
 
 export function getStaticProps() {
   const blogs = handleJSONfiles("./public/posts/blogs");
@@ -43,11 +44,14 @@ export default function Home(props) {
       <Header home='1'/>
       <Banner/>
       <Sobre/>
+      <Partners list={parceiros}/>     
       <EJs/>
+      <Blog list={blogs}/>  
       <MEJ/>
       {/* <Carousel_Eventos id='blog' list={blogs} backgroundColor='#DDDDDD' title={'Blog'} image_heigth={27} right align={'flex-end'}/>        
       <Carousel_Eventos id='eventos' list={eventos} right left button/>
-      <Carousel_Eventos id='parceiros' list={parceiros} backgroundColor='white' color='#4C9ABB' image_heigth={8} title={'Nossos parceiros'} link={'/parceiros'} right left button/>    */}
+      <Carousel_Eventos id='parceiros' list={parceiros} backgroundColor='white' color='#4C9ABB' image_heigth={8} title={'Nossos parceiros'} link={'/parceiros'} right left button/>    */}    
+      <Events list={eventos}/>
       <Contatos/>
       <BlogTemplate title='Experiência MEJ e Processos Seletivos' subtitle='A Empresa Júnior faz diferença em Processos Seletivos, por quê?' img='/posts/eventos/icone-pesquisa.png'/>
       <Footer instagram = "@nejpoa" email = "contato@nejpoa.com.br"/>

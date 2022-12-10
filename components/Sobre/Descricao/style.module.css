@@ -9,12 +9,19 @@
     margin-bottom: 4%;
 }
 .container p {
-    font-size: 1.7vw;
+    font-size: clamp(0.9rem, 2.5vw, 1.5rem);
     width: 50%;
     line-height: 2.5vw;
     text-align: justify;
     font-family: sans-serif;
     /* font-weight: bold; */
+}
+
+@media (max-width: 500px){
+    .container p {
+        line-height: 5vw;
+        /* font-weight: bold; */
+    }
 }
 
 .img{ 

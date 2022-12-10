@@ -7,7 +7,7 @@ export default function Descricao(props){
             <div className={style.img}>
                 <Image src='/sobre/retangulo.png' layout={'fill'}/>
             </div>
-            <p>{props.content}</p>
+            <p className={style.conteudo}>{props.content}</p>
         </div>
     )
 }
