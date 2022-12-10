@@ -51,6 +51,7 @@
     position: relative;
     padding-bottom: 0.25rem;
 }
+
 .animatedHover::before{
     content: "";
     position: absolute;
@@ -60,7 +61,7 @@
     height: 3px;
     transition: 0.25s ease-out;
     background-color: #346d86;
-    background-image: linear-gradient(to right, #4C9ABB , rgb(240, 240, 240) );
+   
 }
 
 .animatedHover:hover::before{
