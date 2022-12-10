@@ -11,9 +11,6 @@ export function getStaticProps(){
   };
 }
 
-  {/* <Link href={{pathname: `/eventos/${eventos[1].fileName}`}}>
-                <a>Eventos</a>
-            </Link>     */}
 
 export default function Eventos(props){
     let { eventos } = props;
@@ -21,7 +18,7 @@ export default function Eventos(props){
     return(
         
         <div className={style.container}>
-            <Header/>
+            <Header home='0' end='/'/>
             <div className={style.title}>
                 <h1>Nossos eventos</h1>
                 <span/>
