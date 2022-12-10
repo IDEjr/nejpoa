@@ -7,12 +7,12 @@ export default function Anom(){
     if(!eventos) return <></>;
     
     const content = require(`../../public/posts/eventos/${eventos}`)
-    console.log(content)
+    console.log(eventos)
    
     return(
         <>
-            <h1>{content.image_source}</h1>
-            <h1>{content.link}</h1>
+            <h1>a</h1>
+            <h1>a</h1>
         </>
     )
 }
