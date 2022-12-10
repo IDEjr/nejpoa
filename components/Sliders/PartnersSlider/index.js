@@ -53,7 +53,6 @@ const Slider = (props) => {
         responsiveClass: true,
         mouseDrag: true,
         touchDrag: true,
-        center: true,
         responsive:{
             0:{
                 items:1,    

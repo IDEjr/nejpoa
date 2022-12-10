@@ -32,8 +32,8 @@
 
 .owlNext, .owlPrev{
     position: absolute;
-    height: 60px;
-    width: 30px;
+    height: 5vh;
+    width: 5vw;
     font-size: 2rem;
     background-color: transparent;
     border: none;
@@ -45,10 +45,10 @@
 }
 
 .owlNext{
-    right: calc(-80vw - 55px);
+    right: calc(-80vw - 3.5vw - 15px);
 }
 
 .owlPrev{
     transform: rotate(-180deg); 
-    left: -55px;
+    left: calc(-3.5vw - 15px);
 }
