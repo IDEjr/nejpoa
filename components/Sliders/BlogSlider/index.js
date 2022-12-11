@@ -52,7 +52,7 @@ return (
             {props.list.map((post, key)=>{
                 return(
                     <div key={key} className={styles.sliderItem}>
-                        <BlogTemplate/>
+                        <BlogTemplate img={post.image_source} title={post.title} subtitle={post.subtitle}/>
                     </div>
                 )
             })}

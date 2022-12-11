@@ -32,7 +32,7 @@ const Slider = (props) => {
             0:{
                 items:1,    
             },
-            700:{
+            830:{
                 items:2,
             },
             1000:{

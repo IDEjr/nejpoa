@@ -5,7 +5,7 @@ import Titulo from "../title"
 
 export default function Blog(props) {
   return (
-    <div className={styles.container}>
+    <div id="blog" className={styles.container}>
         <Titulo title="Blog"></Titulo>
         <BlogsSlider list={props.list}/>
     </div>
