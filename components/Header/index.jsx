@@ -11,19 +11,18 @@ export default function Header(props){
             <div className={style.logo}>
                 <Image src='/header/logo-header.png' layout={'fill'} />
             </div>
-            <nav>
+            <ul>
                 {props.home == '1' ? 
                 links.map( (i,index) => {
                     return(
-                        <>
+                        <li key={index}>
                             <Link href={`#${i}`} >
-                                <a>{i}</a>
+                                <a className={style.animatedHover}>{i}</a>
                             </Link>
-                        {i == links[links.length - 1] ? false : <span className={style.barra}>|</span>}
-                        </>  
+                        </li>  
                     )
-                }) : <Link href={'/'}><a style={{marginRight: '5%'}}>Voltar</a></Link>}
-            </nav>
+                }) : <Link href={`${props.end}`}><a className={style.animatedHover} style={{marginRight: '-50%'}}>Voltar</a></Link>}
+            </ul>
         </div>
     )
 }
