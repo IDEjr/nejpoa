@@ -16,7 +16,7 @@ export default function Form() {
       setTextarea(values => ({...values, [name]: value}))
     }
     return(
-        <form id="form1" className={style.form} action="https://formsubmit.co/contato@nejpoa.com.br" target = "_blank"
+        <form id="form1" className={style.form} action="https://formsubmit.co/contato@nejpoa.com.br" target = "_blank" rel="noopener"
           method="POST">
 
         <input className={style.inputNome}
