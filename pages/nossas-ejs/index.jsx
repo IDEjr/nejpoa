@@ -2,36 +2,25 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Header from "../../components/Header"
 import Footer from "../../components/footer";
-import json from "../../public/posts/eventos/ejs.json"
 import styles from "./style.module.css"
+import { handleJSONfiles } from "../../functions/jsonHandler";
 
-export default function alou(){
-    const tags = Object.keys(json);
+export function getStaticProps() {
+    const ejs = handleJSONfiles("./public/posts/ejs");
+  
+    return {
+      props: { ejs },
+    };
+  }
+
+export default function NossasEjs(props){
+    const tags = ["Negócios","Tecnologia","Agrária","Saúde","Engenharia","Humanas"];
     const [searchTerm, setSearchTerm] = useState('');
+    const ejsPath = "/posts/ejs";
 
-    const tagNames = {
-        negocios: "Negócios",
-        tecnologia: "Tecnologia",
-        agraria: "Agraria",
-        saude: "Saúde",
-        engenharia: "Engenharia",
-        humanas: "Humanas",
-    }
+    let { ejs } = props;
 
     const [activeTags, setActiveTags] = useState([]);
-    const ejs = [];
-    console.log(ejs)
-    for (var tag in json){
-        for (var ej in json[`${tag}`]){
-            if (activeTags.length !== 0){
-                if (activeTags.includes(tag)){
-                    ejs.push(json[`${tag}`][`${ej}`])
-                }
-            }else{
-                ejs.push(json[`${tag}`][`${ej}`])
-            }
-        }
-    }
 
     function toggleTag(tag){
         if (!activeTags.includes(tag)){
@@ -43,8 +32,6 @@ export default function alou(){
         }
     }
 
-    console.log(searchTerm)
-    let index = 0;
     return(
         <div style={{backgroundColor: '#efefef', height:'100vh'}}>
             <Header home='0' end='/'/>
@@ -58,7 +45,7 @@ export default function alou(){
                     activeTags.map((activeTag, key)=>{
                         return(
                             <span key={key} className={styles.activeTag}>
-                                {tagNames[activeTag]}
+                                {activeTag}
                                 <buttton className={styles.removeTagButton} onClick={()=>toggleTag(activeTag)}>   x</buttton>
                             </span>
                         )
@@ -75,7 +62,7 @@ export default function alou(){
                                 key={key} 
                                 style={{backgroundColor: activeTags.includes(tag) ? '#852E2E' : '', fontWeight: activeTags.includes(tag) ? 'bold' : ''}} 
                                 className={styles.tagButton}>
-                                    {tagNames[tag]}
+                                    {tag}
                                 </button>
                             )
                         })
@@ -84,15 +71,22 @@ export default function alou(){
                 <div className={styles.ejsContainerUm}>
                     {
                         ejs.filter((ej)=>{
-                            if (searchTerm == ""){
-                                return ej
-                            }else if (ej.nome.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
-                                return ej;
+                            if(activeTags.includes(ej.tag)){
+                                if(ej.nome.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
+                                    return ej;
+                                }
+                            }else if(activeTags.length === 0){
+                                if (searchTerm === ""){
+                                    return ej;
+                                }
+                                else if(ej.nome.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
+                                    return ej;
+                                }
                             }
                         }).map((ej, key)=>{
                             return(
                                 <div key={key} className={styles.ej}>
-                                    <img src={ej.url} className={styles.ejLogo} alt="Logo ej"></img>
+                                    <img src={`${ejsPath + ej.url}`} className={styles.ejLogo} alt="Logo ej"></img>
                                     <br/>
                                 </div>
                             ) 
