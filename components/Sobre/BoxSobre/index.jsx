@@ -1,5 +1,4 @@
 import styles from './styles.module.css'
-
 import { useState } from 'react';
 import { bodyStreamToNodeStream } from 'next/dist/server/body-streams';
 export default function BoxSobre(props){
@@ -11,7 +10,7 @@ export default function BoxSobre(props){
     return(
 
             <div className={styles.container}>
-              
+                <span className={textStyle} style={{fontSize: "6rem"}}>{props.titulo}</span>
                 <span className={textStyle}>{props.conteudo}</span>
             </div>
         
