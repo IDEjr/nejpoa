@@ -1,5 +1,45 @@
-export default function Eventos() {
+import Link from "next/link";
+import Image from "next/image";
+import style from "./style.module.css"
+import { handleJSONfiles } from "../../functions/jsonHandler"
+import Header from "../../components/Header";
+
+export function getStaticProps(){
+    const eventos = handleJSONfiles('./public/posts/eventos');
+    return {
+    props: { eventos },
+  };
+}
+
+
+export default function Eventos(props){
+    let { eventos } = props;
+    console.log(eventos)
     return(
-        <h1>EVENTOS</h1>
+        
+        <div className={style.container}>
+            <Header home='0' end='/'/>
+            <div className={style.title}>
+                <h1>Nossos eventos</h1>
+                <span/>
+            </div>
+
+            <div className={ style.arrImages}>
+            {eventos.map((i, index) => {
+                return(
+                    <div className={style.imageContent} key={index}>
+                        <Link href={{pathname: `/eventos/${eventos[index].fileName}`}}>
+                            <a>
+                                <div className={style.image}>
+                                    <Image src={eventos[index].image_source} layout={'fill'}  alt={`evento: ${eventos[index].alt}`}/>
+                                </div>  
+                                <p>{eventos[index].alt}</p>
+                            </a>
+                        </Link>
+                    </div>
+                )
+            })}
+            </div>
+        </div>
     )
 }
