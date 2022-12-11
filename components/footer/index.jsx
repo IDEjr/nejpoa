@@ -22,6 +22,7 @@ export default function footer({instagram, email})
               className={styles.link_insta}
               href="https://www.instagram.com/nejpoa/" 
               target={'_blank'}
+              rel={'noopener'}
             >
               <div className={imageStyles.icon_insta}>
                 <Image src={"/footer/Instagram.svg"} layout={"fill"} />
