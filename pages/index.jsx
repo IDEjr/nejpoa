@@ -55,6 +55,7 @@ export default function Home(props) {
       <Contatos/>
       <BlogTemplate title='Experiência MEJ e Processos Seletivos' subtitle='A Empresa Júnior faz diferença em Processos Seletivos, por quê?' img='/posts/eventos/icone-pesquisa.png'/>
       <Footer instagram = "@nejpoa" email = "contato@nejpoa.com.br"/>
+      
     </div>
   );
 }

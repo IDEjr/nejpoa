@@ -34,7 +34,7 @@ export default function NossasEjs(props){
 
     return(
         <div style={{backgroundColor: '#efefef', height:'100vh'}}>
-            <Header home='0'/>
+            <Header home='0' end='/'/>
             <div className={styles.pageContainer} style={{maxWidth: tags.length*200+(tags.length*12)}}>
                 <div className={styles.searchBarContainer}>
                     <input type="text" className={styles.searchBar} placeholder="Digite aqui o nome da empresa..." onChange={event => {setSearchTerm(event.target.value)}}></input>
