@@ -2,6 +2,8 @@ import { useRouter } from "next/router"
 import style from './eventos.module.css'
 import Header from "../../components/Header"
 import Image from "next/image"
+import reactMarkdown from "react-markdown"
+import { ReactMarkdown } from "react-markdown/lib/react-markdown"
 export default function Anom(){
     const router = useRouter()
     console.log(router)
@@ -20,10 +22,13 @@ export default function Anom(){
           </div>
 
              <div className={style.sub_container}>
-                <Image width={"500px"} height={"400px"} src={element.image_event}/>
+                <img src={element.image_event}/>
+             
                 <div className={style.content}>
                   <span className={style.barra}/>
-                  <p>{element.content}</p>
+                  {element.content != "" ?
+                  <p><ReactMarkdown>{element.content}</ReactMarkdown></p>
+                  : <p className={style.condicional} style={{fontSize:"10vw"}}>Em breve...</p>}
                 </div>
             </div>
         </div>

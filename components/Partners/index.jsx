@@ -6,10 +6,10 @@ import Link from 'next/link'
 
 export default function Partners(props) {
   return (
-    <div id="parceiros" className={styles.container}>
+    <div id="parceiros" className={styles.container} >
         <Titulo title="Nossos parceiros" color="#4C9ABB" ></Titulo>
         <EventsSlider list={props.list} />
-        <Link href="/parceiros"><a className={styles.linkBtn}>VER TODOS</a></Link>
+       
     </div>
   )
 }
