@@ -14,14 +14,17 @@ export default function Anom(){
         <div className={style.container}>
           <Header home='0' end='/eventos'/>
 
-          <div className={style.titulo}>
+          <div className={style.title}>
             <h1>{element.title}</h1>
             <span className={style.barra}/>
           </div>
 
              <div className={style.sub_container}>
-                <Image width={"400px"} height={"400px"} src={element.image_source}/>
-                <p>{element.conteudo}</p>
+                <Image width={"500px"} height={"400px"} src={element.image_event}/>
+                <div className={style.content}>
+                  <span className={style.barra}/>
+                  <p>{element.content}</p>
+                </div>
             </div>
         </div>
     )
