@@ -9,7 +9,9 @@ export default function Header(props){
     return(
         <div className={style.header}>
             <div className={style.logo}>
-                <Image src='/header/logo-header.png' layout={'fill'} />
+               <Link  href='/'>
+                    <a><Image  src='/header/logo-header.png' layout={'fill'} /></a> 
+               </Link>
             </div>
             <ul>
                 {props.home == '1' ? 

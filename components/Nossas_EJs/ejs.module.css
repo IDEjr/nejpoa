@@ -26,9 +26,10 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     /* align-items: center; */
     gap: 6vw;
+
     margin: 0% 20%;
     
 }
