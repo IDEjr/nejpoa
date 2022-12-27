@@ -3,6 +3,7 @@ import Image from "next/image";
 import style from "./style.module.css"
 import { handleJSONfiles } from "../../functions/jsonHandler"
 import Header from "../../components/Header";
+import StyledTitle from "../../components/styledTitle";
 
 export function getStaticProps(){
     const eventos = handleJSONfiles('./public/posts/eventos');
@@ -14,17 +15,14 @@ export function getStaticProps(){
 
 export default function Eventos(props){
     let { eventos } = props;
-    console.log(eventos)
+    // console.log(eventos)
     return(
         
         <div className={style.container}>
             <Header home='0' end='/'/>
-            <div className={style.title}>
-                <h1>Nossos eventos</h1>
-                <span/>
-            </div>
+            <StyledTitle title='Nossos eventos'/>
 
-            <div className={ style.arrImages}>
+            <div className={style.arrImages}>
             {eventos.map((i, index) => {
                 return(
                     <div className={style.imageContent} key={index}>

@@ -11,7 +11,9 @@ export default function BlogTemplate(props){
             </div>
             <h2>{props.title}</h2>
             <span>{props.subtitle}</span>
-
+            <div className={style.data_component}>
+                <span/>
+            </div>
         </div>
     )
 }

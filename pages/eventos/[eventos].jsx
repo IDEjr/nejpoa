@@ -6,7 +6,6 @@ import reactMarkdown from "react-markdown"
 import { ReactMarkdown } from "react-markdown/lib/react-markdown"
 export default function Anom(){
     const router = useRouter()
-    console.log(router)
     const {eventos} = router.query;
     if(!eventos) return <></>;
     
