@@ -51,8 +51,47 @@
     box-shadow: 0px 5px 2px rgba(0,0,0,0.3);
 }
 
+
+.indicator{
+    display: none;
+}
+
+@media (min-width: 769px){
+    .indicator{
+        content: "●";
+        background-color: #4C9ABB;
+        font-size: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 12px 0 0;
+        box-sizing: border-box;
+        height: 40px;
+        width: 40px;
+        top: 10px;
+        left: 0px;
+        position: absolute;
+        transition: ease 0.5s all;
+        transform: rotate(45deg);
+        color: #428299;
+    }
+    
+    .indicator.missao{
+        margin-left: 8%;
+    }
+    
+    .indicator.valores{
+        margin-left: 49%;
+    }
+    
+    .indicator.regras{
+        margin-left: 92%;
+    }
+}
+
 .mvvContainer{
-    height: 600px;
+    min-height: 600px;
+    gap: 20px;
     padding: 30px 0 0 0;
     background-color: blue;
     display: flex;
@@ -60,41 +99,13 @@
     position: relative;
 }
 
-.indicator{
-    background-image:
-    linear-gradient(to bottom right, transparent 50%, #4C9ABB 0),
-    linear-gradient(to top right, #4C9ABB 50%, transparent 0);
-    background-size: 50% 100%;
-    background-repeat: no-repeat;
-    background-position: left, right;
-    font-size: 22px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0 12px 0 0;
-    box-sizing: border-box;
-    height: 80px;
-    width: 80px;
-    position: absolute;
-    top: 10px;
-    transition: ease 0.5s all;
-    transform: translate(0);
-    color: #428299;
-}
-
-.indicator.missao{
-    transform: translate(-200px);
-}
-
-.mvvContainer.regras{
-    right: 9%;
-}
-
 .mvv{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 460px;
+    min-height: 460px;
+    gap: 30px;
+    height: fit-content;
     background-color: #4C9ABB;
     width: 100%;
     padding: 30px 0;
@@ -108,9 +119,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4rem;
+    font-weight: bold;
+    font-size: clamp(3rem, 5vw, 4rem);
     text-align: center;
-    border-right: 1px solid white;
 }
 
 .mvv .content{
@@ -119,15 +130,63 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    flex-direction: column;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
     font-weight: bold;
     padding: 40px;
+    gap: 20px;
     box-sizing: border-box;
+    border-left: 1px solid white;  
 }
 
+.mvv .content .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+    gap: 20px;
+    height: max-content;
+}
 
+.mvv .content .item.right{
+    flex-direction: row-reverse;
+}
 
-@media (max-width: 600px){
+.mvv .content .item .img{
+    width: 20%;
+    min-width: 100px;
+    height: 100px;
+    background-color: maroon;
+}
+
+.mvv .content .item .text{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mvv .content .item.left .text{
+    text-align: left;
+}
+
+.mvv .content .item.right .text{
+    text-align: right;
+}
+
+.mvv .content .item .text .title{
+    font-size: clamp(1.2rem, 2.4vw, 1.6rem);
+    font-weight: bold;
+}
+
+.mvv .content .item .text .description{
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-weight: normal;
+    line-height: 1.3;
+}
+
+@media (max-width: 768px){
     .optionsContainer{
         height: 430px;
         padding: 30px 0 60px 0;
@@ -137,11 +196,51 @@
 
     .option{
         height: 80px;
-        width: 280px;
+        width: 80vw;
     }
 
     .option::after{
         height: 15px;
         bottom: -16px;
+    }
+}
+
+@media (max-width: 630px){
+    .mvv{
+        flex-direction: column;
+    }
+
+    .mvv > .title{
+        width: 80%;
+    }
+
+    .mvv .content{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: clamp(1.5rem, 2.5vw, 2rem);
+        font-weight: bold;
+        padding: 40px;
+        box-sizing: border-box;
+        text-align: center;
+        border-left: none;
+        border-top: 1px solid white;
+    }
+
+    .mvv .content .item,
+    .mvv .content .item.right{
+        width: 80vw;
+        flex-direction: column;
+    }
+
+    .mvv .content .item.right .title,
+    .mvv .content .item .title{
+        text-align: center;
+    }
+
+    .mvv .content .item .description,
+    .mvv .content .item.right .description{
+        text-align: justify;
     }
 }
