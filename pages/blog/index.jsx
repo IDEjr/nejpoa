@@ -1,10 +1,8 @@
 import { handleJSONfiles } from "../../functions/jsonHandler";
 import Header from "../../components/Header";
-import StyledTitle from "../../components/styleTitle";
+import TextoEstilizado from "../../components/TextoEstilizado";
 import style from "./style.module.css";
-
 import Image from "next/image";
-
 
 export function getStaticProps() {
   const conteudo = handleJSONfiles("./public/posts/blogs");
@@ -19,7 +17,7 @@ export default function BlogPage(props) {
   return (
     <div className={style.container}>
       <Header home="0" end="/" />
-      <StyledTitle title="Nossos conteúdos" />
+      <TextoEstilizado title="Nossos conteúdos" />
       <div className={style.arrImages}>
         {conteudo.map((i, index) => {
           return (

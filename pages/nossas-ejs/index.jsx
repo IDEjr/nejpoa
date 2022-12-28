@@ -33,7 +33,7 @@ export default function NossasEjs(props){
     }
 
     return(
-        <div style={{backgroundColor: '#efefef', height:'100vh'}}>
+        <div style={{backgroundColor: '#efefef'}}>
             <Header home='0' end='/'/>
             <div className={styles.pageContainer} style={{maxWidth: tags.length*200+(tags.length*12)}}>
                 <div className={styles.searchBarContainer}>
