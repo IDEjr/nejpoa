@@ -22,7 +22,6 @@ export default function Anom(){
 
              <div className={style.sub_container}>
                 <img src={element.image_event}/>
-             
                 <div className={style.content}>
                   <span className={style.barra}/>
                   {element.content != "" ?
