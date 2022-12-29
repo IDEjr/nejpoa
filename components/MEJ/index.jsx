@@ -2,15 +2,15 @@ import style from './style.module.css'
 import Image from 'next/image'
 import TextBox from './text_box'
 import ButtonBox from './button_box'
-import Title from '../title'
 export default function MEJ(){
     return (
         <>
-        <div id='mej' className={style.container}>
-            <Title title='MEJ'/>
+        <div className={style.container}>
+            <h1>MEJ</h1>
+            
             <div className={style.content_container}>
                 <div className={style.img_nej}>
-                    <Image src='/mej/imagemnejpoa.png' layout={'fill'} alt='imagem ilustrativa de uma empresa'/>
+                    <Image src='/MEJ/imagemnejpoa.png' layout={'fill'} alt='imagem ilustrativa de uma empresa'/>
                 </div>
             
             <div className={style.container_infos}>

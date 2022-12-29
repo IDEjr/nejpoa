@@ -1,30 +1,27 @@
 import style from './styles.module.css'
 import Image from 'next/image'
 import Link from 'next/link';
-import { getStaticProps } from '../../pages';
-export default function Header(props){
+export default function Header(){
     
-    const links = ['sobre nós', 'parceiros', 'nossas ejs', 'eventos', 'mej', 'blog', 'contato'];
+    const links = ['sobre nós', 'parceiros', 'nossas ejs', 'eventos', 'mej', 'contato'];
 
     return(
         <div className={style.header}>
             <div className={style.logo}>
-               <Link  href='/'>
-                    <a><Image  src='/header/logo-header.png' layout={'fill'} /></a> 
-               </Link>
+                <Image src='/header/logo-header.png' layout={'fill'} />
             </div>
-            <ul>
-                {props.home == '1' ? 
-                links.map( (i,index) => {
+            <nav>
+                {links.map( i => {
                     return(
-                        <li key={index}>
-                            <Link href={`/#${i}`} >
-                                <a className={style.animatedHover}>{i}</a>
+                        <>
+                            <Link href={`#${i}`} key={i}>
+                                <a>{i}</a>
                             </Link>
-                        </li>  
+                        {i == links[links.length - 1] ? false : <span className={style.barra}>|</span>}
+                        </>  
                     )
-                }) : <Link href={`${props.end}`}><a className={style.animatedHover} style={{marginRight: '-50%'}}>Voltar</a></Link>}
-            </ul>
+                })}
+            </nav>
         </div>
     )
 }
