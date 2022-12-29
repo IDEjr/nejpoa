@@ -1,7 +1,9 @@
 import React from "react";
 import style from "./contato.module.css";
+
 import { useState } from 'react';
 import ReactDOM from 'react-dom/client';
+import Form from "./form";
 // import { BsArrowRight } from 'react-icons/fa';
 
 const customStyles = {
@@ -13,6 +15,9 @@ const customStyles = {
       marginRight           : '-50%',
       transform             : 'translate(-50%, -50%)'
   }};
+
+
+
 
 
 export default function Contacts() {
@@ -27,10 +32,11 @@ export default function Contacts() {
       setInputs(values => ({...values, [name]: value}))
       setTextarea(values => ({...values, [name]: value}))
     }
+
   
     return ( 
       
-    <div className={style.container}>
+    <div id='contato' className={style.container}>
         <div className={style.contact_text}>
           <h1 className={style.h1}>Contato</h1>
           
@@ -86,11 +92,10 @@ export default function Contacts() {
            placeholder="Enviar"
             />
       </form>
+
       </div>
       </div>
     )
   
-  
-  const root = ReactDOM.createRoot(document.getElementById('root'));
-  root.render(<Contacts />);
+
 }

@@ -1,5 +1,5 @@
 .header{
-    background-color: FFFFFF;
+    background-color: #FFFFFF;
     width: 100%;
     height: fit-content;
     display: flex;
@@ -13,45 +13,65 @@
     display: flex;
     width: 20vw;
     height: 5vw;
-
+    
     /* background: white; */
 }
 
-.header nav {
+.header ul {
     display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: flex-end;
-    /* background-color: red; */
+    width: 70%;
+    height: fit-content;
+    padding: 0%;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: black; */
 
 }
 
-
-.header nav a{
+.header ul li{
     color: #4C9ABB;
-    font-size: 1.5rem;
-    margin-left: 2%;
+    display: flex;
+    font-size: 1.5vw;
     text-transform: uppercase;
-
 }
 
-.header nav a:hover {
-    color: #A83C3C;
-    text-decoration-line: overline;
-    transform: scale(1.01);
-    cursor: pointer;
+.header a{
+    color: #4C9ABB;
+    display: flex;
+    font-size: 1.5vw;
+    justify-content: space-between;
+    text-transform: uppercase;
 }
 
 
-.barra{
-    font-size: 1.5rem;
-    margin-left: 2%;
-    color: #CDCDCD;
+.animatedHover{
+    display: inline-block;
+    position: relative;
+    padding-bottom: 0.25rem;
 }
+
+.animatedHover::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    transition: 0.25s ease-out;
+    background-color: #346d86;
+   
+}
+
+.animatedHover:hover::before{
+    width: 100%;
+}
+
+
+
+
 @media (max-width: 1100px){
-    .header nav a{
-        font-size: 1.1rem;
-    }
+   
     
     .logo{
         width: 200px;
@@ -60,7 +80,7 @@
 }
 
 @media (max-width: 840px){
-    .header nav a{
+    .header ul a{
         display: none;
         /* background-color: red; */
     }
