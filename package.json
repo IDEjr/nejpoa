@@ -11,10 +11,14 @@
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
     "@netlify/plugin-nextjs": "^4.29.2",
+    "jquery": "^3.6.1",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1"
+    "react-markdown": "^8.0.4",
+    "react-owl-carousel": "^2.3.3"
+
   },
   "devDependencies": {
     "eslint": "8.22.0",

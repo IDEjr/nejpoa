@@ -1,0 +1,54 @@
+.container {
+    padding: 0% 5% 5% 5%;
+}
+
+.blog_component{
+    width: clamp(200px, 20vw, 30rem);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8%;
+ 
+   
+}
+
+.blog_component span{
+    width: 100%;
+   
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: justify;
+    box-sizing: content-box;
+    margin: 5% 0% 0% 2%;
+    font-size: clamp(10px, 1vw, 100px);
+    opacity: 70%;
+    overflow-wrap: break-word;
+    
+   
+    
+}
+.arrImages{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.image{
+   position: relative;
+   width: clamp(200px, 20vw, 30rem);
+   height: clamp(200px, 20vw, 30rem);
+   overflow: hidden;
+   border-radius: 15% 5%;
+   border: 3px solid rgb(250, 250, 250);
+   box-shadow: 6px 6px 8px rgb(148, 148, 148);
+}
+
+.blog_component:hover{
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.image:hover{
+    border: 3px solid #4C9ABB;
+}

@@ -12,6 +12,7 @@ a {
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,4 +23,9 @@ a {
     color: white;
     background: black;
   }
+}
+
+.owl-prev.disabled,
+.owl-next.disabled {
+  opacity: 0;
 }
