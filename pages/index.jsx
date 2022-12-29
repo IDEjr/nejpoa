@@ -11,6 +11,7 @@ import JSXStyle from "styled-jsx/style";
 import Events from "../components/Events"
 import Partners from "../components/Partners"
 import Blog from "../components/Blog"
+import MVV from "../components/MVV";
 
 export function getStaticProps() {
   const blogs = handleJSONfiles("./public/posts/blogs");
@@ -44,6 +45,7 @@ export default function Home(props) {
       <Header home='1'/>
       <Banner/>
       <Sobre/>
+      <MVV/>
       <Partners list={parceiros}/>     
       <EJs/>
       <Blog list={blogs}/>  
