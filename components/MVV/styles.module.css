@@ -1,12 +1,11 @@
 .container{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
 .optionsContainer{
-    height: 350px;
-    background-color: red;
+    height: 430px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -93,7 +92,6 @@
     min-height: 600px;
     gap: 20px;
     padding: 30px 0 0 0;
-    background-color: blue;
     display: flex;
     justify-content: center;
     position: relative;
@@ -103,14 +101,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: fit-content;
     min-height: 460px;
     gap: 30px;
-    height: fit-content;
     background-color: #4C9ABB;
     width: 100%;
     padding: 30px 0;
     box-sizing: border-box;
     color: white;
+    position: relative;
 }
 
 .mvv > .title{
@@ -127,6 +126,7 @@
 .mvv .content{
     width: 70%;
     height: 100%;
+    min-height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,13 +151,6 @@
 
 .mvv .content .item.right{
     flex-direction: row-reverse;
-}
-
-.mvv .content .item .img{
-    width: 20%;
-    min-width: 100px;
-    height: 100px;
-    background-color: maroon;
 }
 
 .mvv .content .item .text{
