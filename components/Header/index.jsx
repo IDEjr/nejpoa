@@ -18,7 +18,7 @@ export default function Header(props){
                 links.map( (i,index) => {
                     return(
                         <li key={index}>
-                            <Link href={`#${i}`} >
+                            <Link href={`/#${i}`} >
                                 <a className={style.animatedHover}>{i}</a>
                             </Link>
                         </li>  
