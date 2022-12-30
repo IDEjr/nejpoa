@@ -10,7 +10,7 @@ export default function Header(props){
         <div className={style.header}>
             <div className={style.logo}>
                <Link  href='/'>
-                    <a><Image  src='/header/logo-header.png' layout={'fill'} /></a> 
+                    <a><Image style={{position: "relative"}} src='/header/logo-header.png' layout={'fill'} /></a> 
                </Link>
             </div>
             <ul>

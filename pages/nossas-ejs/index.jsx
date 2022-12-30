@@ -87,10 +87,10 @@ export default function NossasEjs(props){
                             }
                         }).map((ej, key)=>{
                             return(
-                                <div key={key} className={styles.ej}>
+                                <a href={ej.websiteLink} key={key} className={styles.ej}>
                                     <img src={`${ejsPath + ej.url}`} className={styles.ejLogo} alt="Logo ej"></img>
                                     <br/>
-                                </div>
+                                </a>
                             ) 
                         })
                     }           

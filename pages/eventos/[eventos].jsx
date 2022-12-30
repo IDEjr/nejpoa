@@ -2,7 +2,6 @@ import { useRouter } from "next/router"
 import style from './eventos.module.css'
 import Header from "../../components/Header"
 import Image from "next/image"
-import reactMarkdown from "react-markdown"
 import { ReactMarkdown } from "react-markdown/lib/react-markdown"
 export default function Anom(){
     const router = useRouter()

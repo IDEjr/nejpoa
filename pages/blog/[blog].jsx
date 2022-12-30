@@ -2,12 +2,16 @@ import { useRouter } from "next/router"
 import Header from "../../components/Header";
 import style from './blog.module.css'
 import Image from "next/image";
+import Footer from "../../components/footer";
+import Slider from "../../components/Sliders/BlogSlider";
+import { ReactMarkdown } from "react-markdown/lib/react-markdown"
+
 export default function AnomBlog(){
-    const router = useRouter()
-    const {blog} = router.query;
+    const router = useRouter();
+    const { blog } = router.query;
     if(!blog) return <></>;
     const element = require(`../../public/posts/blogs/${blog}`)
-   
+
     return(
         <div className={style.blog}>
             <Header  home='1'/>
@@ -23,6 +27,19 @@ export default function AnomBlog(){
                     </div>
                 </div>
             </div>
+            
+            <ReactMarkdown className={style.text_container}>
+                {element.content}
+            </ReactMarkdown>
+
+          <div className={style.continue_explorando}>
+            <div className={style.titleStyled}>
+                <h2>Continue explorando</h2>
+                <span/>
+            </div>
+          </div>
+
+            <Footer instagram = "@nejpoa" email = "contato@nejpoa.com.br" theme='light'/>
         </div>
     )
 }

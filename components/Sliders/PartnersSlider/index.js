@@ -3,43 +3,15 @@ import dynamic from "next/dynamic";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import styles from "./style.module.css"
-let productsp = [{
-    id: 1,
-    name: "Product Number 1",
-    brand: "Brand Name",
-    url: "products-number-1",
-    price: 100,
-},
-{
-    id: 1,
-    name: "Product Number 1",
-    brand: "Brand Name",
-    url: "products-number-1",
-    price: 100,
-},
-{
-    id: 1,
-    name: "Product Number 1",
-    brand: "Brand Name",
-    url: "products-number-1",
-    price: 100,
-},
-];
 
 var $ = require("jquery");
 if (typeof window !== "undefined") {
 window.$ = window.jQuery = require("jquery");
 }
 
-// This is for Next.js. On Rect JS remove this line
 const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
 ssr: false,
 });
-
-// This is for React JS, Remove this for Next.js
-// import OwlCarousel from 'react-owl-carousel';
-
-import Image from "next/image";
 
 const Slider = (props) => {
     const PartnersConfig = {
@@ -77,7 +49,7 @@ const Slider = (props) => {
             >   
                 {props.list.map((item, key)=>{
                     return( 
-                        <a href={item.link} key={key} className={styles.sliderItem}>
+                        <a href={item.link} key={key} className={styles.sliderItem} target={'_blank'}>
                             <img layout={"fill"} alt={"Imagem do parceiro NEJPOA"} src={item.image_source}/>
                         </a>
                     )

@@ -1,23 +1,20 @@
 .text_icons{
     font-size: 1.3rem;
-    color: white;
     margin: 0% 5% 0% 2%;
     padding-right: 2%;
-    
+
 }
 
 .text_logo{
     width: 40vw;
     margin: -3% 0%;
-    color: #ffffff;
     font-size: 2vw;
     /* background-color: red; */
-  
+
     
   }
 
 .text_CNPJ{
-  color: #ffffff;
   font-size: 1rem;
   text-align: center;
 

@@ -9,13 +9,10 @@ if (typeof window !== "undefined") {
 window.$ = window.jQuery = require("jquery");
 }
 
-// This is for Next.js. On Rect JS remove this line
 const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
 ssr: false,
 });
 
-// This is for React JS, Remove this for Next.js
-// import OwlCarousel from 'react-owl-carousel';
 const Slider = (props) => {
     const EventsConfig = {
         loop: true,
@@ -53,7 +50,7 @@ const Slider = (props) => {
             >
                 {props.list.map((event,key)=>{
                     return(
-                        <a href={event.link} key={key} className={styles.sliderItem}>
+                        <a href={event.link} key={key}  className={styles.sliderItem} target={'_blank'}>
                             <img layout={"fill"} alt={"Imagem do evento NEJPOA"} src={event.image_source}/>
                         </a> 
                     )

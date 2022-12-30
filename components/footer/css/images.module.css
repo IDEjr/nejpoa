@@ -17,15 +17,39 @@
   /* background-color: black; */
 }
 
+.icon_insta_blue{
+  width: 45px;
+  height: 30px;
+  position: relative;
+}
+
+.icon_email_blue{
+  width: 70px;
+  height: 40px;
+  position: relative;
+}
+
   @media (max-width: 880px){
     
     .image_logo{
       width: 100%;
-      height: 20vh;
+      height: 20vw;
       /* margin-left: -7vw; */
       position: relative;
     }
   }
 
+
+  @media (max-width: 450px){
+    .icon_email_blue{
+      width: 50px;
+      height: 40px;
+    }
+
+    .icon_insta_blue{
+      width: 35px;
+      height: 30px;
+    }
+  }
  
   

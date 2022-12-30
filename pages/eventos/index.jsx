@@ -27,7 +27,7 @@ export default function Eventos(props){
                 return(
                     <div className={style.imageContent} key={index}>
                         <Link href={{pathname: `/eventos/${eventos[index].fileName}`}}>
-                            <a>
+                            <a style={{textDecoration: "none", color: "inherit"}}>
                                 <div className={style.image}>
                                     <Image src={eventos[index].image_source} layout={'fill'}  alt={`evento: ${eventos[index].alt}`}/>
                                 </div>  

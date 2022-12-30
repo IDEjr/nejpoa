@@ -4,10 +4,12 @@
     padding: 2% 2%;
     background-color: #ffdedede;
     font-family: sans-serif;
+    
+
 }
 
 .container__EJs{
-    width: 70%;
+    width: 70%;   
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
@@ -22,13 +24,15 @@
 }
 
 .condicional {
+    /* background-color: black; */
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     /* align-items: center; */
-    gap: 6vw;
+    gap: 7vw;
 
     margin: 0% 20%;
     

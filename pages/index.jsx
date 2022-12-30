@@ -18,7 +18,6 @@ export function getStaticProps() {
   const eventos = handleJSONfiles("./public/posts/eventos");
   const parceiros = handleJSONfiles("./public/posts/parceiros");
 
-
   return {
     props: { blogs, eventos, parceiros },
   };
@@ -27,7 +26,6 @@ export function getStaticProps() {
 export default function Home(props) {
   let { blogs, eventos, parceiros } = props;
   
-
   return (
     <div className="container">
       <style jsx>{`
@@ -52,7 +50,7 @@ export default function Home(props) {
       <MEJ/>
       <Events list={eventos}/>
       <Contatos/>
-      <Footer instagram = "@nejpoa" email = "contato@nejpoa.com.br"/>
+      <Footer instagram = "@nejpoa" email = "contato@nejpoa.com.br" theme='ligth'/>
       
     </div>
   );

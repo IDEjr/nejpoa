@@ -121,7 +121,7 @@
 }
 
 .ej{
-  
+    z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,7 +133,7 @@
 
 .ejLogo{
     width: 150px;
-    height: 150px;
+    height: fit-content;
 }
 
 @media (max-width: 600px){  

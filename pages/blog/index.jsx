@@ -21,7 +21,7 @@ export default function BlogPage(props) {
       <div className={style.arrImages}>
         {conteudo.map((i, index) => {
           return (
-            <Link href={{pathname: `/blog/${conteudo[index].fileName}`}}>
+            <Link state={{from: "teste"}} href={{pathname: `/blog/${conteudo[index].fileName}`}}>
               <div className={style.blog_component}>
                 <div className={style.image}>
                   <Image src={conteudo[index].image_source} layout={"fill"} />
