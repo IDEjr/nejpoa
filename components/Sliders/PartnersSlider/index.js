@@ -49,7 +49,7 @@ const Slider = (props) => {
             >   
                 {props.list.map((item, key)=>{
                     return( 
-                        <a href={item.link} key={key} className={styles.sliderItem} target={'_blank'}>
+                        <a href={item.link} key={key} className={styles.sliderItem} target={'_blank'} rel="noreferrer">
                             <img layout={"fill"} alt={"Imagem do parceiro NEJPOA"} src={item.image_source}/>
                         </a>
                     )

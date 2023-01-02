@@ -6,13 +6,9 @@ export default function ButtonBox(props){
             <div className={style.img_fejers}>
                 <Image src={props.img} layout={'fill'}/>
             </div>
-            <button
-            onClick={(e) => {
-                e.preventDefault();
-                window.open(props.link, "_blank");
-            }}>
+            <a href={props.link} target='_blank' rel="noreferrer"><button>
             Saiba mais
-            </button>
+            </button></a>
         
         </div>
      )

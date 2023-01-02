@@ -2,6 +2,7 @@ import style from './ejs.module.css'
 import EJ from './EJ'
 import Link from 'next/link'
 import Title from '../title'
+
 export default function EJs() {
     const EJS = ['Negócios', 'Tecnologia', 'Agrária', 'Saúde', 'Engenharia', 'Humanas']
     return(
@@ -11,7 +12,7 @@ export default function EJs() {
                 <div className={EJS.length % 2 ? style.container__EJs : style.condicional }>
                 {EJS.map((empresa, index) => {  
                     return (
-                        <EJ key={index} titulo = {empresa}/>
+                        <EJ key={index} titulo = {empresa} index_img = {index}/>
                     )
                 })}
             </div>

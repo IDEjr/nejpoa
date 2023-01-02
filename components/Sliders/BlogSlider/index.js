@@ -21,7 +21,7 @@ const Slider = (props) => {
     nav: true,
     dots: false,
     loop: false,
-    navRewind: false,
+    // navrewind: false,
     responsiveClass: true,
     mouseDrag: true,
     touchDrag: true,

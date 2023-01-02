@@ -1,8 +1,10 @@
+
 .container{
     display: flex;
     flex-direction: column;
     padding: 2% 2%;
-    background-color: #ffdedede;
+    background-image: radial-gradient(black 1.5px, transparent 0);
+    background-size: 40px 40px;
     font-family: sans-serif;
     
 

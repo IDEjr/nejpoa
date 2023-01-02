@@ -5,7 +5,7 @@ import Image from "next/image";
 import Footer from "../../components/footer";
 import Slider from "../../components/Sliders/BlogSlider";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown"
-import Texte from './texte'
+
 
 
 export default function AnomBlog(){
@@ -24,7 +24,7 @@ export default function AnomBlog(){
     return(
 
         <div className={style.blog}>
-            <Texte/>
+    
             <Header  home='1'/>
             <div className={style.banner_container}>
                 <h1>{element.title}</h1>

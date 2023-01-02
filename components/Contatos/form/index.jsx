@@ -17,7 +17,7 @@ export default function Form() {
     }
     return(
         <form id="form1" className={style.form} action="https://formsubmit.co/contato@nejpoa.com.br" target = "_blank"
-          method="POST">
+          rel="noreferrer" method="POST">
 
         <input className={style.inputNome}
         

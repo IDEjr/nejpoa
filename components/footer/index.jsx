@@ -41,6 +41,7 @@ export default function footer(props) {
             className={styles.link_insta}
             href="https://www.instagram.com/nejpoa/"
             target={"_blank"}
+            rel="noreferrer"
           >
             <div
               className={
