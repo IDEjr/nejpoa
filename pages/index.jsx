@@ -50,7 +50,7 @@ export default function Home(props) {
       <MEJ/>
       <Events list={eventos}/>
       <Contatos/>
-      <Footer instagram = "@nejpoa" email = "contato@nejpoa.com.br" theme='ligth'/>
+      <Footer instagram = "@nejpoa" email = "contato@nejpoa.com.br" />
       
     </div>
   );

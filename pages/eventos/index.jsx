@@ -14,12 +14,12 @@ export function getStaticProps(){
 
 
 export default function Eventos(props){
+    
     let { eventos } = props;
-    // console.log(eventos)
     return(
         
         <div className={style.container}>
-            <Header home='0' end='/'/>
+            <Header home='1' end='/'/>
             <TextoEstilizado title='Nossos eventos'/>
 
             <div className={style.arrImages}>

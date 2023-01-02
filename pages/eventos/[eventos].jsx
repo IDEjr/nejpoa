@@ -3,6 +3,7 @@ import style from './eventos.module.css'
 import Header from "../../components/Header"
 import Image from "next/image"
 import { ReactMarkdown } from "react-markdown/lib/react-markdown"
+
 export default function Anom(){
     const router = useRouter()
     const {eventos} = router.query;
@@ -11,8 +12,9 @@ export default function Anom(){
     const element = require(`../../public/posts/eventos/${eventos}`)
 
     return(
+       
         <div className={style.container}>
-          <Header home='0' end='/eventos'/>
+          <Header home='1' end='/'/>
 
           <div className={style.title}>
             <h1>{element.title}</h1>

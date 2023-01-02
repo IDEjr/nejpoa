@@ -8,10 +8,12 @@
 .linkBtn{
     background-color: aqua;
     margin: 80px auto 0px auto;
+    margin-top: -2%;
     padding: 15px 25px;
     color: white;
     background: linear-gradient(180deg, #A82A44 0%, rgba(168, 42, 68, 0.854167) 14.58%, rgba(168, 42, 68, 0.822917) 17.71%, #A82A44 100%);
     box-shadow: 0px 10px 4px rgba(206, 36, 71, 0.35);
     border-radius: 20px;
     font-size: clamp(1rem, 2vw, 1.3rem);
+    text-decoration: none;
 }

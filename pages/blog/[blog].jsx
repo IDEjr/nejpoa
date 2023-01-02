@@ -5,15 +5,26 @@ import Image from "next/image";
 import Footer from "../../components/footer";
 import Slider from "../../components/Sliders/BlogSlider";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown"
+import Texte from './texte'
+
 
 export default function AnomBlog(){
     const router = useRouter();
     const { blog } = router.query;
     if(!blog) return <></>;
+    try{
+        require(`../../public/posts/blogs/${blog}`)
+    } catch {
+        return <h1>OI</h1>
+    }
+
     const element = require(`../../public/posts/blogs/${blog}`)
 
+    
     return(
+
         <div className={style.blog}>
+            <Texte/>
             <Header  home='1'/>
             <div className={style.banner_container}>
                 <h1>{element.title}</h1>

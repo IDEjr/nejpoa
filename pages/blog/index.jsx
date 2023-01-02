@@ -14,6 +14,7 @@ export function getStaticProps() {
 
 export default function BlogPage(props) {
   let { conteudo } = props;
+  console.log(conteudo);
   return (
     <div className={style.container}>
       <Header home="0" end="/" />

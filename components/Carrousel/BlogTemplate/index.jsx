@@ -3,11 +3,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 export default function BlogTemplate(props){
     return (
-        <Link href={'/blog'}>
+        <Link href={`/blog/${props.title}`}>
             <div className={style.container} >
                 <div className={style.subcontainer}>
                     <div className={style.img}>
-                        <Image alt= {`Imagem direcional para o blog sobre:' ${props.titulo}`}
+                        <Image priority alt= {`Imagem direcional para o blog sobre:' ${props.titulo}` }
                             src={props.img} 
                             layout={'fill'} 
                             />
