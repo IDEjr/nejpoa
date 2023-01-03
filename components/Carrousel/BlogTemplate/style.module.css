@@ -16,12 +16,13 @@
    flex-direction: column;
    justify-content: space-between;
    align-items: center;
+  
    
     
 }
 .img{
     position: relative;
-    width: 15vw;
+    width: 13vw;
     height: 15vw;
     margin: 10%;
  
@@ -46,6 +47,7 @@
 .data{
     display: flex;
     margin-bottom: 3%;
+    margin-top: 5%;
     color: #AFACAC;
     text-decoration: underline;
     /* background-color: black; */
