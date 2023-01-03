@@ -1,16 +1,16 @@
 .title
 {
     width: 100vw;
-    padding: 5% 0 7% 10%;
+    padding: 5% 0 5% 10%;
     
-    font-size: clamp(3vw, 4vw, 5vw);
+    font-size: clamp(3rem, 4vw, 5rem);
     font-weight: bold;
     
 }
 
 @media (max-width: 450px){
     .title{
-        padding: 5% 0;
+        padding: 15% 0;
         text-align: center;
         font-size: 40px;
     }

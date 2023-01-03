@@ -4,10 +4,10 @@ import Image from 'next/image'
 export default function Descricao(props){
     return(
         <div className={style.container}>
-            <div className={style.imgContainer}>
-                <img className={style.img} src={"/Logo_nej_poa.png"} />
+            <div className={style.wrapper}>
+                <p className={style.conteudo}>{props.content}</p>
+                {props.children}
             </div>
-            <p className={style.conteudo}>{props.content}</p>
         </div>
     )
 }

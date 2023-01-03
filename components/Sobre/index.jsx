@@ -4,17 +4,31 @@ import Descricao from './Descricao'
 import Title from '../title'
 
 export default function Sobre(){
-    let conteudo = "Fundado em 2012 como NEJ UFRGS, o NEJ POA é um dos 3 núcleos do Rio Grande do Sul que tem, desde o início de sua jornada, a missão de representar e potencializar as empresas juniores, tendo expandido esse foco em 2016 para toda cidade de Porto Alegre. Contamos com aproximadamente 500 estudantes trabalhando voluntariamente, realizando projetos de qualidade na busca por um Rio Grande do Sul mais empreendedor e nosso dever é potencializar seus resultados através dos nossos produtos."
-
+    let conteudo = 
+    (<>
+        Fundado em 2012 como NEJ UFRGS, o NEJ POA é um dos 3 núcleos do Rio Grande do Sul que tem, desde o início de sua jornada, a missão de representar e potencializar as empresas juniores, tendo expandido esse foco em 2016 para toda cidade de Porto Alegre. 
+            <br/><br/>
+        Contamos com aproximadamente 500 estudantes trabalhando voluntariamente, realizando projetos de qualidade na busca por um Rio Grande do Sul mais empreendedor e nosso dever é potencializar seus resultados através dos nossos produtos.
+    </>)
+    
     return(
         <div style={{display: "flex", flexDirection: "column"}}>
             <div id='sobre nós' className={styles.container}>
-                <BoxSobre titulo= '32' conteudo='Empresas Juniores' cor='vermelho'/>
-                <BoxSobre titulo='1.3' conteudo='milhão de faturamento em 2022' cor='azul'/>        
-                <BoxSobre titulo='683' conteudo='Contratos Feitos' cor='vermelho'/> 
-                
+                <Title title="Sobre nós"/>
+                <div className={styles.adaptative}>
+                    <BoxSobre titulo= '32' conteudo='empresas juniores' cor='vermelho'/>
+                    <BoxSobre titulo='683' conteudo='Contratos Feitos' cor='azul'/>
+                    <BoxSobre titulo='1,3' conteudo='milhão de faturamento em 2022' cor='vermelho'/> 
+                </div>
+                <Descricao content={conteudo}>
+                    <BoxSobre special={true} titulo='500' conteudo='estudantes voluntários' cor='branco'></BoxSobre>
+                </Descricao>
             </div>
-        <Descricao content={conteudo}/>
         </div>
     )
 }
+
+{/* <Descricao content={conteudo}/> */}
+// <BoxSobre titulo= '32' conteudo='Empresas Juniores' cor='vermelho'/>
+// <BoxSobre titulo='1.3' conteudo='milhão de faturamento em 2022' cor='azul'/>        
+// <BoxSobre titulo='683' conteudo='Contratos Feitos' cor='vermelho'/> 
