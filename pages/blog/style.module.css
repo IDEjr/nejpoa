@@ -29,9 +29,11 @@
 .arrImages{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
+
 
 
 .image{
@@ -40,6 +42,7 @@
    height: clamp(200px, 20vw, 30rem);
    overflow: hidden;
    border-radius: 15% 5%;
+  
    border: 3px solid rgb(250, 250, 250);
    box-shadow: 6px 6px 8px rgb(148, 148, 148);
 }
