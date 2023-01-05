@@ -18,7 +18,8 @@ collections:
     fields:
       - { label: "Nome", name: "nome", widget: "string" }
       - { label: "Link", name: "link", widget: "string" }
-   - name: "blog"
+      
+  - name: "blog"
     label: "Conteúdo do Blog"      
     folder: "public/posts/blogs"
     identifier_field: "nome"
@@ -28,12 +29,12 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "title", name: "title", widget: "string" }
-      - { label: "subtitle", name: "subtitle", widget: "string" }
-      - { label: "date", name: "date", widget: "string" }
-      - { label: "content", name: "content", widget: "string" }
-      - { label: "image_source", name: "image_source", widget: "image" , media_folder: images}
-      - { label: "image_source_alt", name: "image_source_alt", widget: "image" , media_folder: images/images_alt}
+        - { label: "title", name: "title", widget: "string" }
+        - { label: "subtitle", name: "subtitle", widget: "string" }
+        - { label: "date", name: "date", widget: "string" }
+        - { label: "content", name: "content", widget: "string" }
+        - { label: "image_source", name: "image_source", widget: "image" , media_folder: images}
+        - { label: "image_source_alt", name: "image_source_alt", widget: "image" , media_folder: images/images_alt}
 
 
 
