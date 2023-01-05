@@ -35,6 +35,19 @@ collections:
         - { label: "content", name: "content", widget: "markdown" }
         - { label: "image_source", name: "image_source", widget: "image" , media_folder: /posts/blogs/images}
         - { label: "image_source_alt", name: "image_source_alt", widget: "image" , media_folder: /posts/blogs/images/images_alt}
-
+  - name: "evento"
+    label: "Eventos"      
+    folder: "public/posts/eventos"
+    identifier_field: "nome"
+    slug: "{{slug}}"
+    extension: "json"     
+    create: true
+    editor:
+      preview: false
+    fields:
+        - { label: "title", name: "title", widget: "string" }
+        - { label: "content", name: "content", widget: "markdown" }
+        - { label: "image_source", name: "image_source", widget: "image" , media_folder: /posts/eventos/images}
+        
 
 
