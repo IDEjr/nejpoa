@@ -74,14 +74,14 @@ export default function NossasEjs(props){
                     {
                         ejs.filter((ej)=>{
                             if(activeTags.includes(ej.tag)){
-                                if(ej.nome.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
+                                if(ej.title.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
                                     return ej;
                                 }
                             }else if(activeTags.length === 0){
                                 if (searchTerm === ""){
                                     return ej;
                                 }
-                                else if(ej.nome.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
+                                else if(ej.title.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
                                     return ej;
                                 }
                             }
