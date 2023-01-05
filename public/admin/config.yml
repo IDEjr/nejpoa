@@ -48,6 +48,9 @@ collections:
         - { label: "title", name: "title", widget: "string" }
         - { label: "content", name: "content", widget: "markdown" }
         - { label: "image_source", name: "image_source", widget: "image" , media_folder: /posts/eventos/images}
+        - { label: "image_event", name: "image_event", widget: "image" , media_folder: /posts/eventos/images/images_event}
+
+        
         
 
 

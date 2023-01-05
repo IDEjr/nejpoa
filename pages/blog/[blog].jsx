@@ -44,12 +44,12 @@ export default function AnomBlog(){
                 {element.content}
             </ReactMarkdown>
 
-          <div className={style.continue_explorando}>
+          {/* <div className={style.continue_explorando}>
             <div className={style.titleStyled}>
                 <h2>Continue explorando</h2>
                 <span/>
             </div>
-          </div>
+          </div> */}
 
             <Footer instagram = "@nejpoa" email = "contato@nejpoa.com.br" theme='light'/>
         </div>
