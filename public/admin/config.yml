@@ -61,7 +61,7 @@ collections:
     fields:
         - { label: "nome", name: "nome", widget: "string" }
         - { label: "url", name: "url", widget: "image", media_folder: "/posts/ejs/images" }
-        - { label: "tag", name: "tag", widget: "strign" }
+        - { label: "tag", name: "tag", widget: "string" }
         - { label: "websiteLink", name: "websiteLink", widget: "string" }
   - name: "parceiros"
     label: "Parceiros do NEJPOA"      
