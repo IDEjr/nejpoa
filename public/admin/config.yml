@@ -59,7 +59,7 @@ collections:
     editor:
       preview: false
     fields:
-        - { label: "nome", name: "nome", widget: "string" }
+        - { label: "title", name: "title", widget: "string" }
         - { label: "url", name: "url", widget: "image", media_folder: "/posts/ejs/images" }
         - { label: "tag", name: "tag", widget: "string" }
         - { label: "websiteLink", name: "websiteLink", widget: "string" }
