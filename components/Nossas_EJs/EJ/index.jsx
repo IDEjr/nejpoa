@@ -11,11 +11,14 @@ export default function EJ(props){
 //    assim por diante
 
     return(
-        <Link href='/nossas-ejs'>
-        <div className={style.box_ej}>
-            <h2>{props.titulo}</h2>
-            <Image src={`/NossasEjs/${img_source[props.index_img]}.gif`} width={'100px'} height={'100px'} priority/>
-        </div>
+        <Link href={{
+            pathname: '/nossas-ejs', 
+            query: {tag: props.titulo}
+        }}>
+            <div className={style.box_ej}>
+                <h2>{props.titulo}</h2>
+                <Image src={`/NossasEjs/${img_source[props.index_img]}.gif`} width={'100px'} height={'100px'} priority/>
+            </div>
         </Link>
     )
 }

@@ -69,13 +69,17 @@
     color: #868686;
     width: 150px;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
 }
 
 .tags{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 1px;
+    gap: 2px;
     flex-wrap: wrap;
     position: relative;
     margin-top: 20px;
@@ -106,6 +110,7 @@
 .removeTagButton{
     margin-left: 5px;
     cursor: pointer;
+    padding: 4px 6px;
 }
 
 .tag:active{
