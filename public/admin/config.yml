@@ -4,7 +4,7 @@ backend:
 publish_mode: editorial_workflow
 locale: "pt"
 media_folder: public/posts
-public_folder: posts
+public_folder: public/posts
 collections:
   - name: "exemplo"
     label: "Exemplo"      
@@ -22,7 +22,7 @@ collections:
   - name: "blog"
     label: "Conteúdo do Blog"      
     folder: "public/posts/blogs"
-    identifier_field: "nome"
+    identifier_field: "title"
     slug: "{{slug}}"
     extension: "json"     
     create: true
@@ -33,8 +33,8 @@ collections:
         - { label: "subtitle", name: "subtitle", widget: "string" }
         - { label: "date", name: "date", widget: "string" }
         - { label: "content", name: "content", widget: "markdown" }
-        - { label: "image_source", name: "image_source", widget: "image" , media_folder: public/posts/blogs/images}
-        - { label: "image_source_alt", name: "image_source_alt", widget: "image" , media_folder: public/posts/blogs/images/images_alt}
+        - { label: "image_source", name: "image_source", widget: "image" , media_folder: posts/blogs/images}
+        - { label: "image_source_alt", name: "image_source_alt", widget: "image" , media_folder: posts/blogs/images/images_alt}
   - name: "evento"
     label: "Eventos"      
     folder: "public/posts/eventos"
@@ -47,8 +47,8 @@ collections:
     fields:
         - { label: "title", name: "title", widget: "string" }
         - { label: "content", name: "content", widget: "markdown" }
-        - { label: "image_source", name: "image_source", widget: "image" , media_folder: public/posts/eventos/images}
-        - { label: "image_event", name: "image_event", widget: "image" , media_folder: public/posts/eventos/images/images_event}
+        - { label: "image_source", name: "image_source", widget: "image" , media_folder: posts/eventos/images}
+        - { label: "image_event", name: "image_event", widget: "image" , media_folder: posts/eventos/images/images_event}
   - name: "ejs"
     label: "EJs que fazem parte do NEJPOA"      
     folder: "public/posts/ejs"
@@ -60,7 +60,7 @@ collections:
       preview: false
     fields:
         - { label: "title", name: "title", widget: "string" }
-        - { label: "url", name: "url", widget: "image", media_folder: "public/posts/ejs/images" }
+        - { label: "url", name: "url", widget: "image", media_folder: posts/ejs/images" }
         - { label: "tag", name: "tag", widget: "string" }
         - { label: "websiteLink", name: "websiteLink", widget: "string" }
   - name: "parceiros"
@@ -73,7 +73,7 @@ collections:
     editor:
       preview: false
     fields:
-        - { label: "image_source", name: "image_source", widget: "image", media_folder: "public/posts/parceiros/images" }
+        - { label: "image_source", name: "image_source", widget: "image", media_folder: "posts/parceiros/images" }
         - { label: "link", name: "link", widget: "string" }
         
         
