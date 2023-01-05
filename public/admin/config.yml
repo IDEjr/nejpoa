@@ -38,7 +38,7 @@ collections:
   - name: "evento"
     label: "Eventos"      
     folder: "public/posts/eventos"
-    identifier_field: "nome"
+    identifier_field: "evento"
     slug: "{{slug}}"
     extension: "json"     
     create: true
