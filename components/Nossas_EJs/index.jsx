@@ -13,7 +13,7 @@ export default function EJs() {
                 <div className={EJS.length % 2 ? style.container__EJs : style.condicional }>
                 {EJS.map((empresa, index) => {  
                     return (
-                            <EJ key ={index} titulo = {empresa} index_img = {index}/>
+                            <EJ key ={index} titulo={empresa} index_img = {index}/>
                     )
                 })}
             </div>

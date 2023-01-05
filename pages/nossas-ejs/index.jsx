@@ -1,9 +1,10 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../../components/Header"
 import Footer from "../../components/footer";
 import styles from "./style.module.css"
 import { handleJSONfiles } from "../../functions/jsonHandler";
+import { useRouter } from "next/router";
 
 export function getStaticProps() {
     const ejs = handleJSONfiles("./public/posts/ejs");
@@ -17,8 +18,18 @@ export default function NossasEjs(props){
     const tags = ["Negócios","Tecnologia","Agrária","Saúde","Engenharia","Humanas"];
     const [searchTerm, setSearchTerm] = useState('');
     const ejsPath = "/posts/ejs";
-
+    
     let { ejs } = props;
+
+    const router = useRouter();
+    useEffect(() => {
+        if (router.isReady) {
+            // Code using query
+            console.log(router.query);
+            // this will set the state before component is mounted
+            setActiveTags([router.query.tag])
+        }
+    }, [router.isReady]);
 
     const [activeTags, setActiveTags] = useState([]);
 
