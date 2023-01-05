@@ -50,6 +50,7 @@ const Slider = (props) => {
               <BlogTemplate
                 img={post.image_source}
                 title={post.title}
+                link = {post.fileName}
                 subtitle={post.subtitle}
                 date={post.date}
               />

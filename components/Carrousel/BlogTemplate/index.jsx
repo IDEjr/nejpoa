@@ -3,7 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 export default function BlogTemplate(props){
     return (
-        <Link href={`/blog/${props.fileName}`}>
+      
+        <Link href={`/blog/${props.link}`}>
             <div className={style.container} >
                 <div className={style.subcontainer}>
                     <div className={style.img}>
