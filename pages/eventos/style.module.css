@@ -9,16 +9,16 @@
 .arrImages{
     display: flex;
     flex-direction: row;
-    margin-left: 12%;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 80px;
 }   
 
 
 .imageContent{
-    width: 20vw;
+    width: clamp(200px, 20vw, 30rem);
     display: flex;
     flex-direction: column;
+    margin-bottom: 8%;
     
    
 }
@@ -38,11 +38,10 @@
 
 
 .image{
-    
     position: relative;
-    width: 20vw;
-    height: 20vw;
-    margin: 0%;
+    width: clamp(200px, 20vw, 30rem);
+    height: clamp(200px, 20vw, 30rem);
+    overflow: hidden;
     /* background-color: black; */
    
 }

@@ -10,7 +10,7 @@
 }
 
 .title h1{
-    font-size: 2.5vw;
+    font-size: clamp(1.3rem, 2.5vw, 3.5rem);
     color: #A82A44;
     margin-bottom: 5%;
     font-weight: bold;
