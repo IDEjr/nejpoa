@@ -4,6 +4,7 @@ import style from './blog.module.css'
 import Image from "next/image";
 import Footer from "../../components/footer";
 import Slider from "../../components/Sliders/BlogSlider";
+import NotFound from "../404";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown"
 
 
@@ -15,7 +16,7 @@ export default function AnomBlog(){
     try{
         require(`../../public/posts/blogs/${blog}`)
     } catch {
-        return <h1>OI</h1>
+        return <NotFound/>
     }
 
     const element = require(`../../public/posts/blogs/${blog}`)
