@@ -25,7 +25,7 @@
 .imageContent p{
     width: 20vw;
     line-height: 120%;
-    font-size: 1vw;
+    font-size: clamp(10px, 1vw, 100px);
     text-align: justify;
     font-weight: bold;
     font-family: sans-serif;
