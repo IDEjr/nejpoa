@@ -5,23 +5,10 @@ publish_mode: editorial_workflow
 locale: "pt"
 media_folder: "posts"
 public_folder: public/posts
-collections:
-  - name: "exemplo"
-    label: "Exemplo"      
-    folder: "public/posts/exemplo"
-    identifier_field: "nome"
-    slug: "{{slug}}"
-    extension: "json"    
-    create: true
-    editor:
-      preview: false
-    fields:
-      - { label: "Nome", name: "nome", widget: "string" }
-      - { label: "Link", name: "link", widget: "string" }
-      
+collections:      
   - name: "blog"
     label: "Conteúdo do Blog"      
-    folder: "blogs"
+    folder: "public/posts/blogs"
     identifier_field: "title"
     slug: "{{slug}}"
     extension: "json"     
@@ -37,7 +24,7 @@ collections:
         - { label: "image_source_alt", name: "image_source_alt", widget: "image" , media_folder:  "images/images_alt/{{slug}}"}
   - name: "evento"
     label: "Eventos"      
-    folder: "eventos"
+    folder: "public/posts/eventos" #
     identifier_field: "evento"
     slug: "{{slug}}"
     extension: "json"     
@@ -52,7 +39,7 @@ collections:
         - { label: "image_event", name: "image_event", widget: "image" , media_folder: "images/images_event/{{slug}}"}
   - name: "ejs"
     label: "EJs que fazem parte do NEJPOA"      
-    folder: "ejs"
+    folder: "public/posts/ejs"
     identifier_field: "ejs"
     slug: "{{slug}}"
     extension: "json"     
