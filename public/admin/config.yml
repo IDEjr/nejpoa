@@ -40,7 +40,7 @@ collections:
   - name: "ejs"
     label: "EJs que fazem parte do NEJPOA"      
     folder: "public/posts/ejs"
-    identifier_field: "ejs"
+    identifier_field: "nome"
     slug: "{{slug}}"
     extension: "json"     
     create: true
@@ -61,6 +61,7 @@ collections:
     editor:
       preview: false
     fields:
+        - { label: "nome", name: "nome", widget: "string" }
         - { label: "image_source", name: "image_source", widget: "image", media_folder: "posts/parceiros/images" }
         - { label: "link", name: "link", widget: "string" }
         
