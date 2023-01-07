@@ -54,7 +54,7 @@ collections:
   - name: "parceiros"
     label: "Parceiros do NEJPOA"      
     folder: "public/posts/parceiros"
-    identifier_field: "parceiros"
+    identifier_field: "title"
     slug: "{{slug}}"
     extension: "json"     
     create: true
