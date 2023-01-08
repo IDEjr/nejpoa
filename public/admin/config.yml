@@ -62,7 +62,7 @@ collections:
       preview: false
     fields:
         - { label: "title", name: "title", widget: "string" }
-        - { label: "image_source", name: "image_source", widget: "image", media_folder: "./posts/parceiros/images" }
+        - { label: "image_source", name: "image_source", widget: "image", media_folder: "../posts/parceiros/images" }
         - { label: "link", name: "link", widget: "string" }
         
         
