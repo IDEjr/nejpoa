@@ -4,7 +4,7 @@ backend:
 publish_mode: editorial_workflow
 locale: "pt"
 media_folder: "images"
-public_folder: public/posts
+public_folder: "public/posts"
 collections:      
   - name: "blog"
     label: "Conteúdo do Blog"      
