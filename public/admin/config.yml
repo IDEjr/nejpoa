@@ -3,8 +3,8 @@ backend:
   branch: main # Branch to update (optional; defaults to master) 
 publish_mode: editorial_workflow
 locale: "pt"
-media_folder: "/posts/images"
-public_folder: "/public/posts/images"
+media_folder: "./public/posts/images-netlify"
+# public_folder: "/public/posts/images"
 collections:      
   - name: "blog"
     label: "Conteúdo do Blog"      
