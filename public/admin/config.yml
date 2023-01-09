@@ -3,8 +3,8 @@ backend:
   branch: main # Branch to update (optional; defaults to master) 
 publish_mode: editorial_workflow
 locale: "pt"
-media_folder: "posts"
-public_folder: "public/posts"
+media_folder: "./public/posts"
+public_folder: "posts"
 collections:      
   - name: "blog"
     label: "Conteúdo do Blog"      
