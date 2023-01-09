@@ -4,7 +4,7 @@ backend:
 publish_mode: editorial_workflow
 locale: "pt"
 media_folder: "./public/posts"
-public_folder: "images"
+public_folder: "./public/posts"
 collections:      
   - name: "blog"
     label: "Conteúdo do Blog"      
@@ -20,8 +20,8 @@ collections:
         - { label: "subtitle", name: "subtitle", widget: "string" }
         - { label: "date", name: "date", widget: "string" }
         - { label: "content", name: "content", widget: "markdown" }
-        - { label: "image_source", name: "image_source", widget: "image"}
-        - { label: "image_source_alt", name: "image_source_alt", widget: "image" , media_folder:  "/images/images_alt"}
+        - { label: "image_source", name: "image_source", widget: "/posts/blogs/images"}
+        - { label: "image_source_alt", name: "image_source_alt", widget: "image" , media_folder:  "/posts/blogs/images/images_alt"}
  
         
 
