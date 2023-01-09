@@ -3,8 +3,8 @@ backend:
   branch: main # Branch to update (optional; defaults to master) 
 publish_mode: editorial_workflow
 locale: "pt"
-media_folder: "./public/posts/images"
-public_folder: "/posts/images"
+media_folder: "/posts/images"
+public_folder: "public/posts/images"
 collections:      
   - name: "blog"
     label: "Conteúdo do Blog"      
@@ -20,7 +20,7 @@ collections:
         - { label: "subtitle", name: "subtitle", widget: "string" }
         - { label: "date", name: "date", widget: "string" }
         - { label: "content", name: "content", widget: "markdown" }
-        - { label: "image_source", name: "image_source", widget: "image"}
+        - { label: "image_source", name: "image_source", widget: "image",}
         - { label: "image_source_alt", name: "image_source_alt", widget: "image"}
  
         
