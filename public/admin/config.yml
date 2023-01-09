@@ -20,8 +20,8 @@ collections:
         - { label: "subtitle", name: "subtitle", widget: "string" }
         - { label: "date", name: "date", widget: "string" }
         - { label: "content", name: "content", widget: "markdown" }
-        - { label: "image_source", name: "image_source", widget: "image",}
-        - { label: "image_source_alt", name: "image_source_alt", widget: "image"}
+        - { label: "image_source", name: "image_source", widget: "image", mediafolder: "/posts/images"}
+        - { label: "image_source_alt", name: "image_source_alt", widget: "image", mediafolder: "/posts/images"}
  
         
 
