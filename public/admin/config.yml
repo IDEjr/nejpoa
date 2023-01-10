@@ -53,7 +53,7 @@ collections:
         - { label: "image_event", name: "imagem do evento", widget: "image", mediafolder: "./posts/images"}
 
   - name: "parceiros"
-    label: "Eventos"      
+    label: "Parceiros"      
     folder: "public/posts/parceiros"
     identifier_field: "title"
     slug: "{{slug}}"
