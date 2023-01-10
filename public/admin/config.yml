@@ -50,7 +50,21 @@ collections:
         - { label: "alt", name: "subtitle", widget: "string" }
         - { label: "content", name: "content", widget: "string" }
         - { label: "image_source", name: "image_source", widget: "image", mediafolder: "./posts/images"}    
-        - { label: "image_event", name: "imagem do evento", widget: "image", mediafolder: "./posts/images"}        
+        - { label: "image_event", name: "imagem do evento", widget: "image", mediafolder: "./posts/images"}
+
+  - name: "parceiros"
+    label: "Eventos"      
+    folder: "public/posts/parceiros"
+    identifier_field: "title"
+    slug: "{{slug}}"
+    extension: "json"     
+    create: true
+    editor:
+      preview: false
+    fields:
+        - { label: "title", name: "title", widget: "string" }
+        - { label: "image_source", name: "image_source", widget: "image", mediafolder: "./posts/images"}    
+        - { label: "link", name: "link", widget: "link"}        
 
 
         
