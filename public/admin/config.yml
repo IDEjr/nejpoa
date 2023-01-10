@@ -22,7 +22,21 @@ collections:
         - { label: "content", name: "content", widget: "markdown" }
         - { label: "image_source", name: "image_source", widget: "image", mediafolder: "./posts/images"}
         - { label: "image_source_alt", name: "image_source_alt", widget: "image", mediafolder: "./posts/images"}
-  
+  - name: "ejs"
+    label: "EJS que fazem parte do NEJPOA"      
+    folder: "public/posts/ejs"
+    identifier_field: "title"
+    slug: "{{slug}}"
+    extension: "json"     
+    create: true
+    editor:
+      preview: false
+    fields:
+        - { label: "title", name: "title", widget: "string" }
+        - { label: "tag", name: "tag", widget: "string" }
+        - { label: "websiteLink", name: "websiteLink", widget: "string" }
+        - { label: "url", name: "image_source", widget: "image", mediafolder: "./posts/images"}
+        
 
         
         
