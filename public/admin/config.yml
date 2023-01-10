@@ -1,0 +1,32 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master) 
+publish_mode: editorial_workflow
+locale: "pt"
+media_folder: "/public/posts/images"
+public_folder: "posts/images"
+collections:      
+  - name: "blog"
+    label: "Conteúdo do Blog"      
+    folder: "public/posts/blogs"
+    identifier_field: "title"
+    slug: "{{slug}}"
+    extension: "json"     
+    create: true
+    editor:
+      preview: false
+    fields:
+        - { label: "title", name: "title", widget: "string" }
+        - { label: "subtitle", name: "subtitle", widget: "string" }
+        - { label: "date", name: "date", widget: "string" }
+        - { label: "content", name: "content", widget: "markdown" }
+        - { label: "image_source", name: "image_source", widget: "image", mediafolder: "/posts/images"}
+        - { label: "image_source_alt", name: "image_source_alt", widget: "image", mediafolder: "/posts/images"}
+ 
+        
+
+
+        
+        
+
+
