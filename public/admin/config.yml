@@ -5,7 +5,38 @@ publish_mode: editorial_workflow
 locale: "pt"
 media_folder: "/public/posts/images"
 public_folder: "/posts/images"
-collections:      
+collections:
+  - name: "dados sobre"
+    label: "Dados do NEJPOA"      
+    folder: "public/posts/dadosSobre"
+    identifier_field: "title"
+    slug: "{{slug}}"
+    extension: "json"     
+    create: true
+    editor:
+      preview: false
+    fields:
+        - { label: "empresas_juniores", name: "Empresas que fazem parte do NEJ", widget: "string" }
+        - { label: "contratos_feitos", name: "Contratos feitos", widget: "string" }
+        - { label: "faturamento_ano", name: "Faturamento do Ano", widget: "string" }
+        - { label: "conteudo", name: "Conteudo Extra", widget: "string" }
+
+    
+  - name: "ejs"
+    label: "EJS que fazem parte do NEJPOA"      
+    folder: "public/posts/ejs"
+    identifier_field: "title"
+    slug: "{{slug}}"
+    extension: "json"     
+    create: true
+    editor:
+      preview: false
+    fields:
+        - { label: "title", name: "title", widget: "string" }
+        - { label: "tag", name: "tag", widget: "string" }
+        - { label: "websiteLink", name: "websiteLink", widget: "string" }
+        - { label: "url", name: "image_source", widget: "image", mediafolder: "./posts/images"}
+
   - name: "blog"
     label: "Conteúdo do Blog"      
     folder: "public/posts/blogs"

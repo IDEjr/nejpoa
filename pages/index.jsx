@@ -17,15 +17,16 @@ export function getStaticProps() {
   const blogs = handleJSONfiles("./public/posts/blogs");
   const eventos = handleJSONfiles("./public/posts/eventos");
   const parceiros = handleJSONfiles("./public/posts/parceiros");
+  const dadosSobre = handleJSONfiles("./public/posts/dadosSobre");
 
   return {
-    props: { blogs, eventos, parceiros },
+    props: { blogs, eventos, parceiros, dadosSobre },
   };
 }
 
 export default function Home(props) {
-  let { blogs, eventos, parceiros } = props;
-  
+  let { blogs, eventos, parceiros, dadosSobre} = props;
+
   return (
     <div className="container">
       <style jsx>{`
@@ -42,7 +43,7 @@ export default function Home(props) {
         `}</style>
       <Header home='1'/>
       <Banner/>
-      <Sobre/>
+      <Sobre dados={dadosSobre}/>
       <MVV/>
       <Partners list={parceiros}/>     
       <EJs/>
