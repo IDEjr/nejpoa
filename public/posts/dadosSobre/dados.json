@@ -1,7 +1,11 @@
 {
-    "title" : "Dados",
-    "empresas_juniores": "32",
-    "contratos_feitos": "683",
-    "faturamento_ano": "1,3",
-    "conteudo": "milhão de faturamento em 2022"
+  "Faturamento do Ano": "1,3",
+  "faturamento_ano": "1,3",
+  "empresas_juniores": "32",
+  "conteudo": "milhão de faturamento em 2022",
+  "contratos_feitos": "683",
+  "Contratos feitos": "683",
+  "title": "Dados",
+  "Empresas que fazem parte do NEJ": "33",
+  "Conteudo Extra": "milhão de faturamento em 2022"
 }
