@@ -16,10 +16,10 @@ collections:
     editor:
       preview: false
     fields:
-        - { label: "empresas_juniores", name: "Empresas que fazem parte do NEJ", widget: "string" }
-        - { label: "contratos_feitos", name: "Contratos feitos", widget: "string" }
-        - { label: "faturamento_ano", name: "Faturamento do Ano", widget: "string" }
-        - { label: "conteudo", name: "Conteudo Extra", widget: "string" }
+        - { label: "Empresas que fazem parte do NEJ", name: "empresas_juniores", widget: "string" }
+        - { label: "Contratos feitos", name: "contratos_feitos", widget: "string" }
+        - { label: "Faturamento do Ano", name: "faturamento_ano", widget: "string" }
+        - { label: "Conteudo Extra", name: "conteudo", widget: "string" }
 
   - name: "blog"
     label: "Conteúdo do Blog"      
