@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 400px;
     height: 400px;
+    padding: 0% 4% 0% 4%;
     /* background-color: black; */
 }
 
@@ -27,6 +28,8 @@
 @media (max-width: 420px){
     .text_box{
         width: 100%;
+        margin: 0%;
+
        
     }
     .text_box h1{
@@ -34,7 +37,10 @@
     }
 
     .text_box span{
-        font-size: 30px;
+        margin-top: 10%;
+        padding: 2%;
+        text-align: justify;
+        font-size: 25px;
    
     }
 }

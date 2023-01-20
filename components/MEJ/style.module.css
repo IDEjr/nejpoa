@@ -42,6 +42,7 @@
 @media (max-width: 1500px){
     .content_container{
         flex-direction: column;
+        margin:  0%;
          
     }
 }
@@ -52,4 +53,5 @@
         gap: 0vw;
         margin-bottom: 10%;
     }
+
 }
