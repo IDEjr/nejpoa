@@ -14,7 +14,7 @@ export default function BoxSobre(props){
     console.log(props.special)
     return(
             <div className={`${styles.container} ${props.special ? styles["special"] : ""}`}>
-                <span className={textStyle} style={{fontSize: "clamp(4.5rem, 8vw, 6rem)"}}>{props.titulo}</span>
+                <span className={textStyle} style={{fontSize: "clamp(4rem, 6vw, 5rem)"}}>{props.titulo}</span>
                 <span className={textStyle}>{props.conteudo}</span>
             </div>
     )

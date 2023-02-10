@@ -10,6 +10,7 @@
     max-height: 360px;
     height: 360px;
     align-self: center;
+    padding: 0 5px;
 }
 
 .container.special{
@@ -63,9 +64,10 @@
 }
 
 .container span {
-    font-size: clamp(1.8rem, 5vw, 2.7rem);
+    font-size: clamp(1.7rem, 3vw, 2.5rem);
     font-weight: bold;
     text-align: center;
+    margin-top: 5px;
 }
 
 
