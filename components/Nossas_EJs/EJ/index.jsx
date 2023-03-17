@@ -17,7 +17,7 @@ export default function EJ(props){
         }}>
             <div className={style.box_ej}>
                 <h2>{props.titulo}</h2>
-                <Image src={`/NossasEjs/${img_source[props.index_img]}.gif`} width={'100px'} height={'100px'} priority/>
+                <Image src={`/NossasEjs/${img_source[props.index_img]}.gif`} width={'100px'} height={'100px'} priority unoptimized={true} />
             </div>
         </Link>
     )
