@@ -8,7 +8,6 @@ export default function NotFound(){
         <div className={style.notFound}>
             <div className={style.container} >
                     <div className={style.titulo}><Title title = 'Sua busca atingiu níveis estratosféricos'/></div>
-
                     <Image style={{marginTop: "-8%"}} src={'/404/Logo.png'} width={'600px'} height={'450px'} priority/>
               
             </div>
