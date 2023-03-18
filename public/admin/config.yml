@@ -39,7 +39,7 @@ collections:
         - { label: "image_source_alt", name: "image_source_alt", widget: "image", mediafolder: "./posts/images"}
   - name: "ejs"
     label: "EJS que fazem parte do NEJ"      
-    file: "public/posts/ejs/ej1.json"
+    files: "public/posts/ejs"
     identifier_field: "title"
     slug: "{{slug}}"
     extension: "json"     
