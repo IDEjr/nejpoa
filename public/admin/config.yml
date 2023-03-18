@@ -7,7 +7,7 @@ public_folder: "/posts/images"
 collections:
   - name: "dados"
     label: "Dados do NEJPOA"      
-    folder: "/public/posts/dadosSobre"
+    folder: "./public/posts/dadosSobre"
     identifier_field: "title"
     slug: "{{slug}}"
     extension: "json"     
