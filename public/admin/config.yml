@@ -38,7 +38,7 @@ collections:
         - { label: "image_source", name: "image_source", widget: "image", mediafolder: "./posts/images"}
         - { label: "image_source_alt", name: "image_source_alt", widget: "image", mediafolder: "./posts/images"}
   - name: "ejs"
-    label: "EJS que fazem parte do NEJPOA"      
+    label: "EJS que fazem parte do NEJ"      
     folder: "public/posts/ejs"
     identifier_field: "title"
     slug: "{{slug}}"
