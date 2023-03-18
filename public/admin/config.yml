@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: master # Branch to update (optional; defaults to master) 
+  branch: netlify # Branch to update (optional; defaults to master) 
 publish_mode: editorial_workflow
 locale: "pt"
 media_folder: "/public/posts/images"
@@ -39,7 +39,7 @@ collections:
         - { label: "image_source_alt", name: "image_source_alt", widget: "image", mediafolder: "./posts/images"}
   - name: "ejs"
     label: "EJS que fazem parte do NEJ"      
-    files: "public/posts/ejs"
+    folder: "public/posts/ejs"
     identifier_field: "title"
     slug: "{{slug}}"
     extension: "json"     
